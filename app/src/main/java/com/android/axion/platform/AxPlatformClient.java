@@ -36,6 +36,7 @@ import android.hardware.SensorPrivacyManager;
 import android.hardware.camera2.CameraManager;
 import android.hardware.display.ColorDisplayManager;
 import android.net.ConnectivityManager;
+import android.net.NetworkPolicyManager;
 import android.nfc.NfcAdapter;
 import android.os.Bundle;
 import android.os.Handler;
@@ -305,35 +306,35 @@ public class AxPlatformClient {
         }
 
         ConnectivityManager cm = mContext.getSystemService(ConnectivityManager.class);
-        if (cm != null) {
-            final boolean[] tetherWifi = {false};
-            final boolean[] tetherUsb = {false};
-            try {
-                cm.registerTetheringCallback(
-                        new ConnectivityManager.TetheringCallback() {
-                            @Override
-                            public void onTetheringChanged(int type, boolean enabled,
-                                    int errorCode) {
-                                if (type == ConnectivityManager.TETHERING_WIFI) {
-                                    tetherWifi[0] = enabled;
-                                } else if (type == ConnectivityManager.TETHERING_USB) {
-                                    tetherUsb[0] = enabled;
-                                }
-                            }
-                        }, runnable -> mHandler.post(runnable));
-            } catch (Exception ignored) {}
+        android.net.TetheringManager tm = (android.net.TetheringManager)
+                mContext.getSystemService(Context.TETHERING_SERVICE);
+        android.net.wifi.WifiManager wifi = (android.net.wifi.WifiManager)
+                mContext.getSystemService(Context.WIFI_SERVICE);
+        if (cm != null && tm != null) {
+            final ConnectivityManager.OnStartTetheringCallback tetherCb =
+                    new ConnectivityManager.OnStartTetheringCallback() {
+                        @Override public void onTetheringStarted() {}
+                        @Override public void onTetheringFailed() {}
+                    };
             mFeatures.put(FEATURE_HOTSPOT, new Feature() {
-                public boolean isActive() { return tetherWifi[0]; }
+                // Same state source as Settings' TetherEnabler.
+                public boolean isActive() { return wifi != null && wifi.isWifiApEnabled(); }
                 public void setEnabled(boolean enabled) {
-                    if (enabled) cm.startTethering(ConnectivityManager.TETHERING_WIFI);
-                    else cm.stopTethering(ConnectivityManager.TETHERING_WIFI);
+                    try {
+                        if (enabled) cm.startTethering(ConnectivityManager.TETHERING_WIFI,
+                                false, tetherCb);
+                        else cm.stopTethering(ConnectivityManager.TETHERING_WIFI);
+                    } catch (Exception ignored) {}
                 }
             });
             mFeatures.put(FEATURE_USB_TETHER, new Feature() {
-                public boolean isActive() { return tetherUsb[0]; }
+                public boolean isActive() { return isUsbTethered(tm); }
                 public void setEnabled(boolean enabled) {
-                    if (enabled) cm.startTethering(ConnectivityManager.TETHERING_USB);
-                    else cm.stopTethering(ConnectivityManager.TETHERING_USB);
+                    try {
+                        if (enabled) cm.startTethering(ConnectivityManager.TETHERING_USB,
+                                false, tetherCb);
+                        else cm.stopTethering(ConnectivityManager.TETHERING_USB);
+                    } catch (Exception ignored) {}
                 }
             });
         }
@@ -341,38 +342,41 @@ public class AxPlatformClient {
         CameraManager camera = mContext.getSystemService(CameraManager.class);
         if (camera != null) {
             mFeatures.put(FEATURE_FLASHLIGHT, new Feature() {
+                // A16 has no torch-status query: the tile tracks what it toggled.
+                private final boolean[] lit = {false};
                 private String firstIdWithTorch() {
                     try {
                         for (String id : camera.getCameraIdList()) {
                             if (Boolean.TRUE.equals(camera.getCameraCharacteristics(id)
                                     .get(android.hardware.camera2.CameraCharacteristics
-                                            .FLASHLIGHT_AVAILABLE))) {
+                                            .FLASH_INFO_AVAILABLE))) {
                                 return id;
                             }
                         }
                     } catch (Exception ignored) {}
                     return null;
                 }
-                public boolean isActive() {
-                    try {
-                        String id = firstIdWithTorch();
-                        return id != null && camera.getTorchStatus(id)
-                                == CameraManager.TORCH_STATUS_EXTREMELY_BRIGHT;
-                    } catch (Exception e) { return false; }
-                }
+                public boolean isActive() { return lit[0]; }
                 public void setEnabled(boolean enabled) {
                     String id = firstIdWithTorch();
-                    if (id != null) camera.setTorchMode(id, enabled);
+                    if (id == null) return;
+                    try {
+                        camera.setTorchMode(id, enabled);
+                        lit[0] = enabled;
+                    } catch (Exception ignored) {}
                 }
             });
         }
 
         mFeatures.put(FEATURE_LOCATION, new Feature() {
             public boolean isActive() {
-                return Settings.Secure.getLocationEnabledForUser(cr, UserHandle.myUserId());
+                return Settings.Secure.getIntForUser(cr, Settings.Secure.LOCATION_MODE,
+                        Settings.Secure.LOCATION_MODE_OFF, UserHandle.myUserId())
+                        != Settings.Secure.LOCATION_MODE_OFF;
             }
             public void setEnabled(boolean enabled) {
-                Settings.Secure.setLocationEnabledForUser(cr, enabled, UserHandle.myUserId());
+                com.android.settingslib.Utils.updateLocationEnabled(mContext, enabled,
+                        UserHandle.myUserId(), Settings.Secure.LOCATION_CHANGER_SYSTEM_SETTINGS);
             }
         });
 
@@ -423,11 +427,11 @@ public class AxPlatformClient {
             }
         });
 
-        ActivityManager am = mContext.getSystemService(ActivityManager.class);
-        if (am != null) {
+        NetworkPolicyManager npm = NetworkPolicyManager.from(mContext);
+        if (npm != null) {
             mFeatures.put(FEATURE_DATA_SAVER, new Feature() {
-                public boolean isActive() { return am.getRestrictBackground(); }
-                public void setEnabled(boolean enabled) { am.setRestrictBackground(enabled); }
+                public boolean isActive() { return npm.getRestrictBackground(); }
+                public void setEnabled(boolean enabled) { npm.setRestrictBackground(enabled); }
             });
         }
 
@@ -582,10 +586,13 @@ public class AxPlatformClient {
         mFeatures.put(FEATURE_DREAM, new Feature() {
             public boolean isActive() { return false; }
             public void setEnabled(boolean enabled) {
-                android.service.dreams.IDreamManager idm = mContext.getSystemService(
-                        Context.DREAM_SERVICE);
-                if (idm == null) return;
-                if (idm.isDreaming()) idm.awaken(); else idm.dream();
+                try {
+                    android.service.dreams.IDreamManager idm =
+                            (android.service.dreams.IDreamManager)
+                                    mContext.getSystemService(Context.DREAM_SERVICE);
+                    if (idm == null) return;
+                    if (idm.isDreaming()) idm.awaken(); else idm.dream();
+                } catch (Exception ignored) {}
             }
             @Override public void toggle() throws Exception { setEnabled(true); }
         });
@@ -594,13 +601,13 @@ public class AxPlatformClient {
             public boolean isActive() { return false; }
             public void setEnabled(boolean enabled) {
                 if (!enabled) return;
-                WindowManager wm = mContext.getSystemService(WindowManager.class);
-                if (wm == null) return;
+                // Same path as ScreenUtils: internal ScreenshotHelper talks to SystemUI.
                 mHandler.postDelayed(() -> {
                     try {
-                        wm.takeScreenshot(WindowManager.TAKE_SCREENSHOT_FULLSCREEN,
+                        new com.android.internal.util.ScreenshotHelper(mContext).takeScreenshot(
+                                WindowManager.TAKE_SCREENSHOT_FULLSCREEN,
                                 WindowManager.ScreenshotSource.SCREENSHOT_OTHER,
-                                runnable -> mHandler.post(runnable), null);
+                                mHandler, null);
                     } catch (Exception e) {
                         Log.e(TAG, "screenshot", e);
                     }
@@ -608,6 +615,18 @@ public class AxPlatformClient {
             }
             @Override public void toggle() throws Exception { setEnabled(true); }
         });
+    }
+
+    private static boolean isUsbTethered(android.net.TetheringManager tm) {
+        try {
+            String[] usbRegexs = tm.getTetherableUsbRegexs();
+            for (String iface : tm.getTetheredIfaces()) {
+                for (String regex : usbRegexs) {
+                    if (iface.matches(regex)) return true;
+                }
+            }
+        } catch (Exception ignored) {}
+        return false;
     }
 
     private PowerManager.WakeLock mWakeLock;
