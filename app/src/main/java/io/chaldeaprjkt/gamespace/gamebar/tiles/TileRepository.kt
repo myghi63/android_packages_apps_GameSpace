@@ -335,11 +335,6 @@ class TileRepository @Inject constructor(
             context.getString(R.string.tile_mic_privacy),
         ))
         add(platformTile(
-            AxPlatformClient.FEATURE_WORK_PROFILE,
-            R.drawable.materialsymbols_ic_work_rounded_filled,
-            context.getString(R.string.tile_work_profile),
-        ))
-        add(platformTile(
             AxPlatformClient.FEATURE_USB_TETHER,
             R.drawable.materialsymbols_ic_usb_rounded_filled,
             context.getString(R.string.tile_usb_tether),
@@ -350,44 +345,9 @@ class TileRepository @Inject constructor(
             context.getString(R.string.tile_dream),
         ))
         add(platformTile(
-            AxPlatformClient.FEATURE_READING_MODE,
-            R.drawable.materialsymbols_ic_menu_book_rounded_filled,
-            context.getString(R.string.tile_reading_mode),
-        ))
-        add(platformTile(
-            AxPlatformClient.FEATURE_POWER_SHARE,
-            R.drawable.materialsymbols_ic_battery_charging_full_rounded_filled,
-            context.getString(R.string.tile_power_share),
-        ))
-        add(platformTile(
             AxPlatformClient.FEATURE_CAFFEINE,
             R.drawable.materialsymbols_ic_local_cafe_rounded_filled,
             context.getString(R.string.tile_caffeine),
-        ))
-        add(platformTile(
-            AxPlatformClient.FEATURE_VPN,
-            R.drawable.materialsymbols_ic_vpn_key_rounded_filled,
-            context.getString(R.string.tile_vpn),
-        ))
-        add(platformTile(
-            AxPlatformClient.FEATURE_CAST,
-            R.drawable.materialsymbols_ic_cast_rounded_filled,
-            context.getString(R.string.tile_cast),
-        ))
-        add(platformTile(
-            AxPlatformClient.FEATURE_PROFILES,
-            R.drawable.materialsymbols_ic_manage_accounts_rounded_filled,
-            context.getString(R.string.tile_profiles),
-        ))
-        add(platformTile(
-            AxPlatformClient.FEATURE_SMART_PIXELS,
-            R.drawable.materialsymbols_ic_grid_on_rounded_filled,
-            context.getString(R.string.tile_smart_pixels),
-        ))
-        add(platformTile(
-            AxPlatformClient.FEATURE_SCREEN_RECORD,
-            R.drawable.materialsymbols_ic_videocam_rounded_filled,
-            context.getString(R.string.tile_screen_record),
         ))
         add(platformTile(
             AxPlatformClient.FEATURE_SCREENSHOT,
