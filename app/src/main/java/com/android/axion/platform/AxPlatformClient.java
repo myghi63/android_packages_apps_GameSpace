@@ -257,7 +257,12 @@ public class AxPlatformClient {
 
     private void notifySetting(String feature, String uriName) {
         Feature f = mFeatures.get(feature);
-        if (f != null) notifyFeature(feature, f.isActive());
+        if (f == null) return;
+        try {
+            notifyFeature(feature, f.isActive());
+        } catch (Exception e) {
+            Log.e(TAG, "notifySetting " + feature, e);
+        }
     }
 
     // Feature implementations -------------------------------------------------
