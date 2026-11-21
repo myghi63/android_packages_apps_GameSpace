@@ -147,6 +147,8 @@ class SessionService : Hilt_SessionService() {
 
         sidebar.onGameStart(packageName)
 
+        tileRepository.updateTouchBoostGame(packageName)
+
         callListener.init()
     }
 
@@ -154,6 +156,7 @@ class SessionService : Hilt_SessionService() {
         Log.i(TAG, "Stopping game session")
 
         sidebar.onGameLeave()
+        tileRepository.updateTouchBoostGame(null)
         session.unregister()
         callListener.destroy()
         restoreAutoDnd()

@@ -126,6 +126,16 @@ class TileRepository @Inject constructor(
 
     val isBrightnessVisible: MutableState<Boolean> = mutableStateOf(appSettings.brightnessEnabled)
     val isFpsGraphVisible: MutableState<Boolean> = mutableStateOf(appSettings.fpsGraphEnabled)
+
+    private val touchBoostState = mutableStateOf(false)
+    private var touchBoostPackage: String? = null
+
+    fun updateTouchBoostGame(packageName: String?) {
+        touchBoostPackage = packageName
+        touchBoostState.value =
+            packageName?.let { systemSettings.touchBoostLevels[it] == TOUCH_BOOST_LEVEL_MAX } == true
+    }
+
     fun init(platform: AxPlatformClient) {
         this.platform = platform
 
@@ -417,9 +427,6 @@ class TileRepository @Inject constructor(
         )
 
         if (SystemProperties.getBoolean("persist.sys.ax_touch_boost", false)) {
-            val touchBoostState = mutableStateOf(
-                SystemProperties.getInt("persist.sys.touchboost_enable", 0) == 1
-            )
             add(
                 ToggleableTile(
                     id = "touch_boost",
@@ -427,12 +434,18 @@ class TileRepository @Inject constructor(
                     icon = R.drawable.materialsymbols_ic_touch_app_rounded_filled,
                     state = touchBoostState,
                     setter = {
-                        val newVal = if (it) 1 else 0
-                        SystemProperties.set("persist.sys.touchboost_enable", "$newVal")
+                        val pkg = touchBoostPackage ?: return@ToggleableTile
+                        systemSettings.setTouchBoostLevel(
+                            pkg, if (it) TOUCH_BOOST_LEVEL_MAX else null
+                        )
                         touchBoostState.value = it
                     }
                 )
             )
         }
+    }
+
+    companion object {
+        const val TOUCH_BOOST_LEVEL_MAX = 2
     }
 }

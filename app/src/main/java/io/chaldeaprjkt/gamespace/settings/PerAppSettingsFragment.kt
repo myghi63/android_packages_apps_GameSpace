@@ -82,6 +82,14 @@ class PerAppSettingsFragment : Hilt_PerAppSettingsFragment(),
             onPreferenceChangeListener = this@PerAppSettingsFragment
         }
 
+        findPreference<ListPreference>(PREF_TOUCH_BOOST)?.apply {
+            val opts = viewModel.touchBoostOptions
+            entries = opts.map { it.second }.toTypedArray()
+            entryValues = opts.map { it.first }.toTypedArray()
+            value = viewModel.touchBoostLevel
+            onPreferenceChangeListener = this@PerAppSettingsFragment
+        }
+
         findPreference<Preference>(PREF_UNREGISTER)?.apply {
             summary = context.getString(R.string.per_app_unregister, viewModel.gameLabel)
             setOnPreferenceClickListener {
@@ -109,6 +117,10 @@ class PerAppSettingsFragment : Hilt_PerAppSettingsFragment(),
                 viewModel.updateAngleDriverChoice(newValue as String)
                 true
             }
+            PREF_TOUCH_BOOST -> {
+                viewModel.updateTouchBoostLevel(newValue as String)
+                true
+            }
             else -> false
         }
     }
@@ -117,6 +129,7 @@ class PerAppSettingsFragment : Hilt_PerAppSettingsFragment(),
         const val PREF_HEADERS = "headers"
         const val PREF_PREFERRED_MODE = "per_app_preferred_mode"
         const val PREF_ANGLE_DRIVER = "per_app_angle_driver"
+        const val PREF_TOUCH_BOOST = "per_app_touch_boost"
         const val PREF_UNREGISTER = "per_app_unregister"
     }
 }

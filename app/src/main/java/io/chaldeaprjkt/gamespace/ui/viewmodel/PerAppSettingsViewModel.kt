@@ -52,6 +52,9 @@ class PerAppSettingsViewModel @Inject constructor(
     var angleFeatureAvailable by mutableStateOf(false)
         private set
 
+    var touchBoostLevel by mutableStateOf(AUTO_TOUCH_BOOST)
+        private set
+
     val gameModeOptions = listOf(
         1 to "Standard",
         2 to "Performance",
@@ -75,6 +78,8 @@ class PerAppSettingsViewModel @Inject constructor(
         val userGame = systemSettings.userGames.firstOrNull { it.packageName == pkg }
         preferredMode = userGame?.mode ?: 1
 
+        touchBoostLevel = systemSettings.touchBoostLevels[pkg]?.toString() ?: AUTO_TOUCH_BOOST
+
         val hasAngle = gameModeUtils.findAnglePackage()?.isEnabled == true
         val hasVulkan = gameModeUtils.isVulkanSupported()
         angleFeatureAvailable = hasAngle && hasVulkan
@@ -97,10 +102,28 @@ class PerAppSettingsViewModel @Inject constructor(
         gameModeUtils.setAngleDriverChoice(packageName, choice)
     }
 
+    val touchBoostOptions = listOf(
+        AUTO_TOUCH_BOOST to "Auto",
+        "0" to "Off",
+        "1" to "Standard",
+        "2" to "Maximum"
+    )
+
+    fun updateTouchBoostLevel(choice: String) {
+        touchBoostLevel = choice
+        systemSettings.setTouchBoostLevel(
+            packageName, if (choice == AUTO_TOUCH_BOOST) null else choice.toInt()
+        )
+    }
+
     fun unregisterGame() {
         gameModeUtils.setAngleDriverChoice(packageName, GameModeUtils.DRIVER_CHOICE_DEFAULT)
         val games = systemSettings.userGames.toMutableList()
         games.removeIf { it.packageName == packageName }
         systemSettings.userGames = games
+    }
+
+    companion object {
+        const val AUTO_TOUCH_BOOST = "auto"
     }
 }

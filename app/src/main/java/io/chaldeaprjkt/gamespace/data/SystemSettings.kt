@@ -120,5 +120,38 @@ class SystemSettings @Inject constructor(
             )
         }
 
+    val touchBoostLevels: Map<String, Int>
+        get() =
+            Settings.System.getStringForUser(
+                resolver, "gamespace_touch_boost",
+                UserHandle.USER_CURRENT
+            )
+                ?.split(";")?.filter { it.isNotEmpty() }
+                ?.mapNotNull { entry ->
+                    val parts = entry.split("=")
+                    if (parts.size == 2) {
+                        parts.first() to parts.last().toIntOrNull()
+                    } else null
+                }
+                ?.filter { it.second != null }
+                ?.associate { it.first to it.second!! }
+                ?: emptyMap()
+
+    fun setTouchBoostLevel(packageName: String, level: Int?) {
+        val levels = touchBoostLevels.toMutableMap()
+        if (level == null) {
+            levels.remove(packageName)
+        } else {
+            levels[packageName] = level
+        }
+        Settings.System.putStringForUser(
+            resolver,
+            "gamespace_touch_boost",
+            if (levels.isEmpty()) "" else
+                levels.entries.joinToString(";") { "${it.key}=${it.value}" },
+            UserHandle.USER_CURRENT
+        )
+    }
+
     private fun Boolean.toInt() = if (this) 1 else 0
 }
