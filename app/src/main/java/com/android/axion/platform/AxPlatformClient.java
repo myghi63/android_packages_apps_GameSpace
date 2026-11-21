@@ -475,7 +475,12 @@ public class AxPlatformClient {
             });
         }
 
-        ColorDisplayManager cdm = mContext.getSystemService(ColorDisplayManager.class);
+        // ColorDisplayManager's lookup throws if the service cannot be resolved;
+        // a missing tile is recoverable, a crash-looping SessionService is not.
+        ColorDisplayManager cdm = null;
+        try {
+            cdm = mContext.getSystemService(ColorDisplayManager.class);
+        } catch (Exception ignored) {}
         if (cdm != null) {
             mFeatures.put(FEATURE_NIGHT_LIGHT, new Feature() {
                 public boolean isActive() {
