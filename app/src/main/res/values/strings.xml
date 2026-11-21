@@ -176,4 +176,12 @@
     <!-- Pulse bass haptics -->
     <string name="pulse_bass_haptics_disabled_title">Disable pulse bass haptics</string>
     <string name="pulse_bass_haptics_disabled_summary">Automatically disable pulse bass haptics if enabled</string>
+
+    <!-- Bypass charging notices and QS tiles -->
+    <string name="bypass_enabled_notice">Bypass charging enabled</string>
+    <string name="bypass_refused">Bypass charging not enabled</string>
+    <string name="bypass_refused_not_plugged">Bypass charging not enabled: the device is not plugged in</string>
+    <string name="bypass_refused_battery">Bypass charging not enabled: battery at %1$d%% (minimum 20%%)</string>
+    <string name="bypass_now_title">Bypass now</string>
+    <string name="bypass_gaming_title">Bypass while gaming</string>
  </resources>

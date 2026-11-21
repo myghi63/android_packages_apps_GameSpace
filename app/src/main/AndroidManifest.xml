@@ -20,6 +20,8 @@
     android:sharedUserId="android.uid.system">
 
     <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.MANAGE_ACTIVITY_TASKS" />
     <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS" />
     <uses-permission android:name="android.permission.MANAGE_GAME_MODE" />
     <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
@@ -88,6 +90,48 @@
             <intent-filter>
                 <action android:name="android.service.notification.NotificationListenerService" />
             </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".BootCompletedReceiver"
+            android:exported="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".thermal.ThermalService"
+            android:exported="false" />
+
+        <service
+            android:name=".charge.BypassTileService"
+            android:exported="true"
+            android:icon="@drawable/ic_charge_bypass"
+            android:label="@string/bypass_now_title"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.action.QS_TILE_DETAILS_ACTIVITY"
+                android:value=".settings.SettingsActivity" />
+        </service>
+
+        <service
+            android:name=".charge.BypassGamingTileService"
+            android:exported="true"
+            android:icon="@drawable/ic_charge_bypass"
+            android:label="@string/bypass_gaming_title"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.action.QS_TILE_DETAILS_ACTIVITY"
+                android:value=".settings.SettingsActivity" />
         </service>
 
     </application>
