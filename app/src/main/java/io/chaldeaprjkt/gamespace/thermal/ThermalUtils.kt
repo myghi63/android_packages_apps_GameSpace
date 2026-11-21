@@ -152,13 +152,18 @@ class ThermalUtils private constructor(private val context: Context) {
      * Membership of the game list, which is what decides the gaming scene and
      * the bypass: the GameSpace list (authoritative, carries each app's mode),
      * plus apps declaring FLAG_IS_GAME while the framework auto-detect switch is
-     * on and the framework did not refuse them. The legacy list is still honored
-     * as a safety net for builds without the GameSpace framework hooks.
+     * on. The legacy list is still honored as a safety net for builds without
+     * the GameSpace framework hooks. A removal from the GameSpace UI writes the
+     * denied list, and that must beat every membership source: the legacy list
+     * predates the picker, so an app the user just deleted must not keep the
+     * scene and the bypass through it.
      */
     fun isGame(packageName: String): Boolean =
-        gameModes().containsKey(packageName) ||
+        !isDenied(packageName) && (
+            gameModes().containsKey(packageName) ||
             legacyGameList().contains(packageName) ||
-            (isAutoGameEnabled() && hasGameFlag(packageName) && !isDenied(packageName))
+            (isAutoGameEnabled() && hasGameFlag(packageName))
+        )
 
     private fun isAutoGameEnabled(): Boolean =
         Settings.System.getInt(context.contentResolver, SETTINGS_GAME_LIST_AUTO, 1) == 1
