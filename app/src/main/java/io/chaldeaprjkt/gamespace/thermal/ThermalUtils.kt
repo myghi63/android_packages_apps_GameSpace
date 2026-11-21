@@ -38,9 +38,6 @@ class ThermalUtils private constructor(private val context: Context) {
         /** Switch that lets apps declaring FLAG_IS_GAME join the list automatically. */
         const val SETTINGS_GAME_LIST_AUTO = "gamespace_auto_game_detect"
 
-        /** Legacy list kept readable so a GameSpace-free build still drives the scene. */
-        const val SETTINGS_GAME_LIST_LEGACY = "onyx_game_list"
-
         /** Switch that applies the gaming scene to the game list. Default on. */
         const val SETTINGS_THERMAL_GAMING = "onyx_thermal_gaming"
 
@@ -152,16 +149,12 @@ class ThermalUtils private constructor(private val context: Context) {
      * Membership of the game list, which is what decides the gaming scene and
      * the bypass: the GameSpace list (authoritative, carries each app's mode),
      * plus apps declaring FLAG_IS_GAME while the framework auto-detect switch is
-     * on. The legacy list is still honored as a safety net for builds without
-     * the GameSpace framework hooks. A removal from the GameSpace UI writes the
-     * denied list, and that must beat every membership source: the legacy list
-     * predates the picker, so an app the user just deleted must not keep the
-     * scene and the bypass through it.
+     * on. A removal from the GameSpace UI writes the denied list, and that beats
+     * every membership source.
      */
     fun isGame(packageName: String): Boolean =
         !isDenied(packageName) && (
             gameModes().containsKey(packageName) ||
-            legacyGameList().contains(packageName) ||
             (isAutoGameEnabled() && hasGameFlag(packageName))
         )
 
@@ -188,14 +181,6 @@ class ThermalUtils private constructor(private val context: Context) {
     private fun isDenied(packageName: String): Boolean =
         parseEntries(Settings.System.getString(context.contentResolver, SETTINGS_GAME_LIST_DENIED))
             .containsKey(packageName)
-
-    private fun legacyGameList(): Set<String> =
-        Settings.System.getString(context.contentResolver, SETTINGS_GAME_LIST_LEGACY)
-            ?.split(':', ',')
-            ?.map { it.trim() }
-            ?.filter { it.isNotEmpty() }
-            ?.toSet()
-            ?: emptySet()
 
     /** "pkg=mode;pkg=mode" -> pkg to mode; bare "pkg" entries read as the standard mode. */
     private fun parseEntries(raw: String?): Map<String, Int> {

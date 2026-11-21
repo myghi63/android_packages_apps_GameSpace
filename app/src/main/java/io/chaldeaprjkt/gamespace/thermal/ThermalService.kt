@@ -131,7 +131,6 @@ class ThermalService : android.app.Service() {
             ThermalUtils.SETTINGS_GAME_LIST,
             ThermalUtils.SETTINGS_GAME_LIST_AUTO,
             ThermalUtils.SETTINGS_GAME_LIST_DENIED,
-            ThermalUtils.SETTINGS_GAME_LIST_LEGACY,
             ThermalUtils.SETTINGS_THERMAL_GAMING,
             ThermalUtils.SETTINGS_THERMAL_ALWAYS,
         )) {

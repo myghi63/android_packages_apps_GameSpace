@@ -34,11 +34,9 @@ class BypassChargeUtils private constructor(private val context: Context) {
 
         /**
          * Settings.System switch: bypass charging while a game is in the foreground.
-         * This is the key the GameSpace settings page (and the QS tile) writes; while
-         * it was never written, the legacy onyx_bypass_gaming value still decides.
+         * This is the key the GameSpace settings page (and the QS tile) writes.
          */
         const val SETTING_BYPASS_GAMING = "bypass_charge_enabled"
-        const val SETTING_BYPASS_GAMING_LEGACY = "onyx_bypass_gaming"
 
         /**
          * Settings.System switch: bypass charging whatever the foreground app is.
@@ -147,15 +145,8 @@ class BypassChargeUtils private constructor(private val context: Context) {
     private val BYPASS_VALUE get() = "${profile.client} buck 0"
     private val CHARGING_VALUE get() = "${profile.client} buck 1"
 
-    private fun isSettingEnabled(): Boolean {
-        val current = Settings.System.getInt(context.contentResolver, SETTING_BYPASS_GAMING, -1)
-        return if (current == -1) {
-            // Never written from this build yet: honor the legacy switch.
-            Settings.System.getInt(context.contentResolver, SETTING_BYPASS_GAMING_LEGACY, 1) == 1
-        } else {
-            current == 1
-        }
-    }
+    private fun isSettingEnabled(): Boolean =
+        Settings.System.getInt(context.contentResolver, SETTING_BYPASS_GAMING, 0) == 1
 
     private fun isAlwaysEnabled(): Boolean =
         Settings.System.getInt(context.contentResolver, SETTING_BYPASS_ALWAYS, 0) == 1
