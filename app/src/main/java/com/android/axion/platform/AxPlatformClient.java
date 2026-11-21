@@ -477,10 +477,11 @@ public class AxPlatformClient {
 
         // ColorDisplayManager's lookup throws if the service cannot be resolved;
         // a missing tile is recoverable, a crash-looping SessionService is not.
-        ColorDisplayManager cdm = null;
+        ColorDisplayManager cdmResolved = null;
         try {
-            cdm = mContext.getSystemService(ColorDisplayManager.class);
+            cdmResolved = mContext.getSystemService(ColorDisplayManager.class);
         } catch (Exception ignored) {}
+        final ColorDisplayManager cdm = cdmResolved;
         if (cdm != null) {
             mFeatures.put(FEATURE_NIGHT_LIGHT, new Feature() {
                 public boolean isActive() {
