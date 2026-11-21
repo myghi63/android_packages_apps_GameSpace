@@ -23,10 +23,7 @@
     <string name="auto_brightness_disabled_title">Disable auto-brightness</string>
     <string name="auto_brightness_disabled_summary">Keep brightness settled while in-game</string>
 
-    <!-- Three finger swipe -->
-    <string name="three_screenshot_disabled_summary">Temporary disable three-fingers-swipe gesture while in-game</string>
-    <string name="three_screenshot_disabled_title">Disable three fingers swipe gesture</string>
-
+    
     <!-- Stay awake -->
     <string name="stay_awake_title">Stay awake</string>
     <string name="stay_awake_summary">Keep screen awake while in-game</string>
@@ -172,10 +169,6 @@
     <!-- Game auto-detect -->
     <string name="auto_game_detect_title">Auto game detection</string>
     <string name="auto_game_detect_summary">Automatically add apps marked as games by their developer</string>
-
-    <!-- Pulse bass haptics -->
-    <string name="pulse_bass_haptics_disabled_title">Disable pulse bass haptics</string>
-    <string name="pulse_bass_haptics_disabled_summary">Automatically disable pulse bass haptics if enabled</string>
 
     <!-- Bypass charging notices and QS tiles -->
     <string name="bypass_enabled_notice">Bypass charging enabled</string>

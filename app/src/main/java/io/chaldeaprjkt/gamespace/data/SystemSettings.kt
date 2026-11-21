@@ -24,8 +24,6 @@ import android.provider.Settings
 import io.chaldeaprjkt.gamespace.utils.GameModeUtils
 import javax.inject.Inject
 
-import lineageos.providers.LineageSettings
-
 class SystemSettings @Inject constructor(
     context: Context,
     private val gameModeUtils: GameModeUtils
@@ -65,19 +63,6 @@ class SystemSettings @Inject constructor(
             )
         }
 
-    var statusbarBrightness
-        get() =
-            Settings.System.getIntForUser(
-                resolver, Settings.System.STATUS_BAR_BRIGHTNESS_CONTROL, 0,
-                UserHandle.USER_CURRENT
-            ) == 1
-        set(value) {
-            Settings.System.putIntForUser(
-                resolver, Settings.System.STATUS_BAR_BRIGHTNESS_CONTROL,
-                if (value) 1 else 0, UserHandle.USER_CURRENT
-            )
-        }
-
     var bypassChargeEnabled
         get() =
             Settings.System.getIntForUser(
@@ -100,18 +85,6 @@ class SystemSettings @Inject constructor(
             } else {
                 if (wakelock.isHeld) wakelock.release()
             }
-        }
-
-    var threeScreenshot
-        get() = LineageSettings.System.getIntForUser(
-            resolver, LineageSettings.System.KEY_THREE_FINGERS_SWIPE_ACTION, 0,
-            UserHandle.USER_CURRENT
-        )
-        set(value) {
-            LineageSettings.System.putIntForUser(
-                resolver, LineageSettings.System.KEY_THREE_FINGERS_SWIPE_ACTION,
-                value, UserHandle.USER_CURRENT
-            )
         }
 
     var userGames
@@ -144,19 +117,6 @@ class SystemSettings @Inject constructor(
             Settings.System.putIntForUser(
                 resolver, "gamespace_auto_game_detect",
                 if (value) 1 else 0, UserHandle.USER_CURRENT
-            )
-        }
-
-    var pulseBassHaptics
-        get() =
-            Settings.Secure.getIntForUser(
-                resolver, Settings.Secure.PULSE_BASS_HAPTICS, 0,
-                UserHandle.USER_CURRENT
-            )
-        set(value) {
-            Settings.Secure.putIntForUser(
-                resolver, Settings.Secure.PULSE_BASS_HAPTICS,
-                value, UserHandle.USER_CURRENT
             )
         }
 

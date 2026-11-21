@@ -19,7 +19,6 @@ import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.os.SystemProperties
-import android.os.Vibrator
 import android.view.View
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.preference.Preference
@@ -69,11 +68,6 @@ class SettingsFragment : Hilt_SettingsFragment(),
         updatePreferences()
     }
 
-    private fun hasVibrator(): Boolean {
-        val vibrator = context?.getSystemService(Vibrator::class.java)
-        return vibrator?.hasVibrator() == true
-    }
-
     private fun updatePreferences() {
         val isBypassSupported =
             Build.MANUFACTURER.equals("Google", ignoreCase = true) ||
@@ -82,11 +76,6 @@ class SettingsFragment : Hilt_SettingsFragment(),
         if (!isBypassSupported) {
             findPreference<PreferenceCategory>("in_game_preferences")
                 ?.removePreference(findPreference("bypass_charge_enabled")!!)
-        }
-
-        if (!hasVibrator()) {
-            findPreference<PreferenceCategory>("in_game_preferences")
-                ?.removePreference(findPreference("gamespace_pulse_bass_haptics_disabled")!!)
         }
     }
 

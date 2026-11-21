@@ -49,9 +49,6 @@ class SettingsViewModel @Inject constructor(
     var noAutoBrightness by mutableStateOf(appSettings.noAutoBrightness)
         private set
 
-    var noThreeScreenshot by mutableStateOf(appSettings.noThreeScreenshot)
-        private set
-
     var stayAwake by mutableStateOf(systemSettings.stayAwake)
         private set
 
@@ -103,11 +100,6 @@ class SettingsViewModel @Inject constructor(
     fun updateNoAutoBrightness(disabled: Boolean) {
         noAutoBrightness = disabled
         appSettings.noAutoBrightness = disabled
-    }
-
-    fun updateNoThreeScreenshot(disabled: Boolean) {
-        noThreeScreenshot = disabled
-        appSettings.noThreeScreenshot = disabled
     }
 
     fun updateStayAwake(enabled: Boolean) {
