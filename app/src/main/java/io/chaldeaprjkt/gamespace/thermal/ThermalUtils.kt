@@ -27,7 +27,7 @@ class ThermalUtils private constructor(private val context: Context) {
 
     companion object {
         private const val TAG = "ThermalUtils"
-        private const val PROP_AUTO = "persist.sys.onyx.thermal.auto"
+        private const val PROP_AUTO = "persist.sys.gamespace.thermal.auto"
 
         /** Game list owned by the GameSpace framework, "pkg=mode" entries. */
         const val SETTINGS_GAME_LIST = "gamespace_game_list"
