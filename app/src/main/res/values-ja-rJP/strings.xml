@@ -31,7 +31,6 @@
     <!-- Per app settings -->
     <string name="per_app_title">ゲーム設定</string>
     <string name="per_app_mode_title">電源モード</string>
-    <string name="per_app_mode_standard">標準</string>
     <string name="per_app_touch_boost_title">タッチスクリーンのサンプリングレート</string>
     <string name="per_app_touch_boost_auto">自動</string>
     <string name="per_app_touch_boost_off">標準 (120Hz)</string>

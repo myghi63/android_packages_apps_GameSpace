@@ -60,7 +60,7 @@ class PerAppSettingsViewModel @Inject constructor(
         private set
 
     val gameModeOptions = listOf(
-        1 to context.getString(R.string.per_app_mode_standard),
+        1 to context.getString(R.string.game_mode_balanced),
         2 to context.getString(R.string.game_mode_performance),
         3 to context.getString(R.string.game_mode_battery)
     )

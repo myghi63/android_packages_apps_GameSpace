@@ -31,7 +31,6 @@
     <!-- Per app settings -->
     <string name="per_app_title">Configura gioco</string>
     <string name="per_app_mode_title">Modalità di alimentazione</string>
-    <string name="per_app_mode_standard">Standard</string>
     <string name="per_app_touch_boost_title">Frequenza di campionamento del touchscreen</string>
     <string name="per_app_touch_boost_auto">Automatico</string>
     <string name="per_app_touch_boost_off">Standard (120Hz)</string>

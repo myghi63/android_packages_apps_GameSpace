@@ -31,7 +31,6 @@
     <!-- Per app settings -->
     <string name="per_app_title">ضبط اللعبة</string>
     <string name="per_app_mode_title">وضع الطاقة</string>
-    <string name="per_app_mode_standard">قياسي</string>
     <string name="per_app_touch_boost_title">معدل أخذ عينات شاشة اللمس</string>
     <string name="per_app_touch_boost_auto">تلقائي</string>
     <string name="per_app_touch_boost_off">قياسي (120Hz)</string>

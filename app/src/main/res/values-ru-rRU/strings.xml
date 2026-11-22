@@ -31,7 +31,6 @@
     <!-- Per app settings -->
     <string name="per_app_title">Настроить игру</string>
     <string name="per_app_mode_title">Режим питания</string>
-    <string name="per_app_mode_standard">Стандартный</string>
     <string name="per_app_touch_boost_title">Частота опроса сенсорного экрана</string>
     <string name="per_app_touch_boost_auto">Авто</string>
     <string name="per_app_touch_boost_off">Стандартная (120Hz)</string>

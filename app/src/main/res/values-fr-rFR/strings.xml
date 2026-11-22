@@ -31,7 +31,6 @@
     <!-- Per app settings -->
     <string name="per_app_title">Configurer le jeu</string>
     <string name="per_app_mode_title">Mode énergétique</string>
-    <string name="per_app_mode_standard">Standard</string>
     <string name="per_app_touch_boost_title">Fréquence d'échantillonnage de l'écran tactile</string>
     <string name="per_app_touch_boost_auto">Automatique</string>
     <string name="per_app_touch_boost_off">Standard (120Hz)</string>

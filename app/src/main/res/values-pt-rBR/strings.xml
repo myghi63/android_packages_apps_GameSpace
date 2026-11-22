@@ -31,7 +31,6 @@
     <!-- Per app settings -->
     <string name="per_app_title">Configurar jogo</string>
     <string name="per_app_mode_title">Modo de energia</string>
-    <string name="per_app_mode_standard">Padrão</string>
     <string name="per_app_touch_boost_title">Velocidade de captura do touchscreen</string>
     <string name="per_app_touch_boost_auto">Automático</string>
     <string name="per_app_touch_boost_off">Padrão (120Hz)</string>

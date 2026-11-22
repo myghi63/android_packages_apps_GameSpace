@@ -36,7 +36,6 @@
     <!-- Per app settings -->
     <string name="per_app_title">Configure Game</string>
     <string name="per_app_mode_title">Power Mode</string>
-    <string name="per_app_mode_standard">Standard</string>
     <string name="per_app_touch_boost_title">Touchscreen sampling rate</string>
     <string name="per_app_touch_boost_auto">Auto</string>
     <string name="per_app_touch_boost_off">Standard (120Hz)</string>

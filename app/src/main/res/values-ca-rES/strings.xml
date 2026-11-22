@@ -31,7 +31,6 @@
     <!-- Per app settings -->
     <string name="per_app_title">Configura el joc</string>
     <string name="per_app_mode_title">Mode d'energia</string>
-    <string name="per_app_mode_standard">Estàndard</string>
     <string name="per_app_touch_boost_title">Freqüència de mostreig de la pantalla tàctil</string>
     <string name="per_app_touch_boost_auto">Automàtic</string>
     <string name="per_app_touch_boost_off">Estàndard (120Hz)</string>

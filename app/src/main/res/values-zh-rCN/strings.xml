@@ -31,7 +31,6 @@
     <!-- Per app settings -->
     <string name="per_app_title">配置游戏</string>
     <string name="per_app_mode_title">电源模式</string>
-    <string name="per_app_mode_standard">标准</string>
     <string name="per_app_touch_boost_title">触摸屏采样率</string>
     <string name="per_app_touch_boost_auto">自动</string>
     <string name="per_app_touch_boost_off">标准 (120Hz)</string>

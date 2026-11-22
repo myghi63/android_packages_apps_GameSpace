@@ -31,7 +31,6 @@
     <!-- Per app settings -->
     <string name="per_app_title">Oyunu yapılandır</string>
     <string name="per_app_mode_title">Güç modu</string>
-    <string name="per_app_mode_standard">Standart</string>
     <string name="per_app_touch_boost_title">Dokunmatik ekran örnekleme hızı</string>
     <string name="per_app_touch_boost_auto">Otomatik</string>
     <string name="per_app_touch_boost_off">Standart (120Hz)</string>

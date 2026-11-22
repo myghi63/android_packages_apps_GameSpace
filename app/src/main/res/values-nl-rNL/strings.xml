@@ -31,7 +31,6 @@
     <!-- Per app settings -->
     <string name="per_app_title">Spel configureren</string>
     <string name="per_app_mode_title">Energiemodus</string>
-    <string name="per_app_mode_standard">Standaard</string>
     <string name="per_app_touch_boost_title">Samplefrequentie van het touchscreen</string>
     <string name="per_app_touch_boost_auto">Automatisch</string>
     <string name="per_app_touch_boost_off">Standaard (120Hz)</string>

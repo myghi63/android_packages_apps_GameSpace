@@ -31,7 +31,6 @@
     <!-- Per app settings -->
     <string name="per_app_title">הגדרות משחק</string>
     <string name="per_app_mode_title">מצב חשמל</string>
-    <string name="per_app_mode_standard">סטנדרטי</string>
     <string name="per_app_touch_boost_title">קצב דגימת מסך המגע</string>
     <string name="per_app_touch_boost_auto">אוטומטי</string>
     <string name="per_app_touch_boost_off">סטנדרטי (120Hz)</string>

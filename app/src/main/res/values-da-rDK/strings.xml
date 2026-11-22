@@ -31,7 +31,6 @@
     <!-- Per app settings -->
     <string name="per_app_title">Konfigurer spil</string>
     <string name="per_app_mode_title">Strømtilstand</string>
-    <string name="per_app_mode_standard">Standard</string>
     <string name="per_app_touch_boost_title">Samplehastighed for touchskærm</string>
     <string name="per_app_touch_boost_auto">Automatisk</string>
     <string name="per_app_touch_boost_off">Standard (120Hz)</string>

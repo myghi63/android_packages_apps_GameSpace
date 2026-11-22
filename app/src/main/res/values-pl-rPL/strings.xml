@@ -31,7 +31,6 @@
     <!-- Per app settings -->
     <string name="per_app_title">Skonfiguruj grę</string>
     <string name="per_app_mode_title">Tryb zasilania</string>
-    <string name="per_app_mode_standard">Standardowy</string>
     <string name="per_app_touch_boost_title">Częstotliwość próbkowania ekranu dotykowego</string>
     <string name="per_app_touch_boost_auto">Automatycznie</string>
     <string name="per_app_touch_boost_off">Standardowa (120Hz)</string>

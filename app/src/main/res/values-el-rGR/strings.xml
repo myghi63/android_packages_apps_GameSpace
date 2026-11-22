@@ -31,7 +31,6 @@
     <!-- Per app settings -->
     <string name="per_app_title">Διαμόρφωση παιχνιδιού</string>
     <string name="per_app_mode_title">Λειτουργία ενέργειας</string>
-    <string name="per_app_mode_standard">Τυποποιημένη</string>
     <string name="per_app_touch_boost_title">Ρυθμός δειγματοληψίας οθόνης αφής</string>
     <string name="per_app_touch_boost_auto">Αυτόματο</string>
     <string name="per_app_touch_boost_off">Τυποποιημένος (120Hz)</string>

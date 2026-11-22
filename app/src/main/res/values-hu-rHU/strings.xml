@@ -31,7 +31,6 @@
     <!-- Per app settings -->
     <string name="per_app_title">Játék konfigurálása</string>
     <string name="per_app_mode_title">Energiamód</string>
-    <string name="per_app_mode_standard">Szabványos</string>
     <string name="per_app_touch_boost_title">Érintőképernyő mintavételeési rátája</string>
     <string name="per_app_touch_boost_auto">Automatikus</string>
     <string name="per_app_touch_boost_off">Szabványos (120Hz)</string>

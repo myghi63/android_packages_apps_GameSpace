@@ -31,7 +31,6 @@
     <!-- Per app settings -->
     <string name="per_app_title">Konfigurasi game</string>
     <string name="per_app_mode_title">Mode daya</string>
-    <string name="per_app_mode_standard">Standar</string>
     <string name="per_app_touch_boost_title">Laju pengambilan sampel layar sentuh</string>
     <string name="per_app_touch_boost_auto">Otomatis</string>
     <string name="per_app_touch_boost_off">Standar (120Hz)</string>

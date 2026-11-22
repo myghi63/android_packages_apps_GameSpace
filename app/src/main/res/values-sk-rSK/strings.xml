@@ -31,7 +31,6 @@
     <!-- Per app settings -->
     <string name="per_app_title">Nastaviť hru</string>
     <string name="per_app_mode_title">Režim napájania</string>
-    <string name="per_app_mode_standard">Štandard</string>
     <string name="per_app_touch_boost_title">Vzorkovacia frekvencia dotykového displeja</string>
     <string name="per_app_touch_boost_auto">Automaticky</string>
     <string name="per_app_touch_boost_off">Štandardná (120Hz)</string>

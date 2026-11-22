@@ -31,7 +31,6 @@
     <!-- Per app settings -->
     <string name="per_app_title">Määritä peli</string>
     <string name="per_app_mode_title">Virta-asetus</string>
-    <string name="per_app_mode_standard">Perus</string>
     <string name="per_app_touch_boost_title">Kosketusnäytön näytteistystaajuus</string>
     <string name="per_app_touch_boost_auto">Automaattinen</string>
     <string name="per_app_touch_boost_off">Perus (120Hz)</string>

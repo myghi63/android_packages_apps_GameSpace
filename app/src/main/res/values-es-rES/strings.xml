@@ -31,7 +31,6 @@
     <!-- Per app settings -->
     <string name="per_app_title">Configurar juego</string>
     <string name="per_app_mode_title">Modo de energía</string>
-    <string name="per_app_mode_standard">Estándar</string>
     <string name="per_app_touch_boost_title">Frecuencia de muestreo de la pantalla táctil</string>
     <string name="per_app_touch_boost_auto">Automático</string>
     <string name="per_app_touch_boost_off">Estándar (120Hz)</string>
