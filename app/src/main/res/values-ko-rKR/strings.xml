@@ -34,6 +34,7 @@
     <!-- Per app settings -->
     <string name="per_app_title">게임 구성 설정</string>
     <string name="per_app_mode_title">선호 모드</string>
+    <string name="per_app_touch_boost_title">터치 부스트</string>
     <string name="per_app_angle_title">ANGLE 사용(실험적)</string>
     <string name="per_app_unregister">라이브러리에서 %1$s 제거</string>
     <!-- Disable ADB debugging -->

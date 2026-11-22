@@ -34,6 +34,7 @@
     <!-- Per app settings -->
     <string name="per_app_title">Configura el joc</string>
     <string name="per_app_mode_title">Mode preferit</string>
+    <string name="per_app_touch_boost_title">Touch boost</string>
     <string name="per_app_angle_title">Utilitza l\'ANGLE (experimental)</string>
     <string name="per_app_unregister">Elimina %1$s de la biblioteca</string>
     <!-- Disable ADB debugging -->

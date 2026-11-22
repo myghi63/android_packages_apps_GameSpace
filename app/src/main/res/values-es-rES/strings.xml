@@ -34,6 +34,7 @@
     <!-- Per app settings -->
     <string name="per_app_title">Configurar juego</string>
     <string name="per_app_mode_title">Modo preferido</string>
+    <string name="per_app_touch_boost_title">Aceleración táctil</string>
     <string name="per_app_angle_title">Controlador de gráficos</string>
     <string name="per_app_unregister">Eliminar %1$s de la biblioteca</string>
     <!-- Disable ADB debugging -->

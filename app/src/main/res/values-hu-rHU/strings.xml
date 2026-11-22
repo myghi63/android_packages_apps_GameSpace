@@ -34,6 +34,7 @@
     <!-- Per app settings -->
     <string name="per_app_title">Játék konfigurálása</string>
     <string name="per_app_mode_title">Preferált mód</string>
+    <string name="per_app_touch_boost_title">Érintés gyorsítás</string>
     <string name="per_app_angle_title">ANGLE használata (kísérleti)</string>
     <string name="per_app_unregister">%1$s eltávolítása a könyvtáradból</string>
     <!-- Disable ADB debugging -->

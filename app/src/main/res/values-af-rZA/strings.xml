@@ -34,6 +34,7 @@
     <!-- Per app settings -->
     <string name="per_app_title">Stel speletjie in</string>
     <string name="per_app_mode_title">Voorkeurmodus</string>
+    <string name="per_app_touch_boost_title">Touch boost</string>
     <string name="per_app_angle_title">Gebruik ANGLE (eksperimenteel)</string>
     <string name="per_app_unregister">Verwyder %1$s van biblioteek</string>
     <!-- Disable ADB debugging -->

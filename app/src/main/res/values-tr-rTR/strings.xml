@@ -34,6 +34,7 @@
     <!-- Per app settings -->
     <string name="per_app_title">Oyunu yapılandır</string>
     <string name="per_app_mode_title">Tercih edilen mod</string>
+    <string name="per_app_touch_boost_title">Dokunmatik Hızlandırma</string>
     <string name="per_app_angle_title">ANGLE kullan (deneysel)</string>
     <string name="per_app_unregister">%1$s arşivden kaldır</string>
     <!-- Disable ADB debugging -->

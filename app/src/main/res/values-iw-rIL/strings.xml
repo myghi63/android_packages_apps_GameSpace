@@ -34,6 +34,7 @@
     <!-- Per app settings -->
     <string name="per_app_title">הגדרות משחק</string>
     <string name="per_app_mode_title">מצב מועדף</string>
+    <string name="per_app_touch_boost_title">Touch boost</string>
     <string name="per_app_angle_title">Use ANGLE (experimental)</string>
     <string name="per_app_unregister">הסר את %1$s מהספריה</string>
     <!-- Disable ADB debugging -->

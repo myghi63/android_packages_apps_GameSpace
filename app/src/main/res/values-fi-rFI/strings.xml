@@ -34,6 +34,7 @@
     <!-- Per app settings -->
     <string name="per_app_title">Määritä peli</string>
     <string name="per_app_mode_title">Ensisijainen tila</string>
+    <string name="per_app_touch_boost_title">Touch boost</string>
     <string name="per_app_angle_title">Käytä ANGLE (kokeellinen)</string>
     <string name="per_app_unregister">Poista %1$s peliluettelosta</string>
     <!-- Disable ADB debugging -->

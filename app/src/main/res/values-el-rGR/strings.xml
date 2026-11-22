@@ -34,6 +34,7 @@
     <!-- Per app settings -->
     <string name="per_app_title">Διαμόρφωση παιχνιδιού</string>
     <string name="per_app_mode_title">Προτιμώμενη λειτουργία</string>
+    <string name="per_app_touch_boost_title">Touch boost</string>
     <string name="per_app_angle_title">Χρήση ANGLE (πειραματικό)</string>
     <string name="per_app_unregister">Αφαίρεση του %1$s από τη βιβλιοθήκη</string>
     <!-- Disable ADB debugging -->

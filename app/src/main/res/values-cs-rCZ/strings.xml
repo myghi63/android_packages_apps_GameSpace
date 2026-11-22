@@ -34,6 +34,7 @@
     <!-- Per app settings -->
     <string name="per_app_title">Konfigurace hry</string>
     <string name="per_app_mode_title">Preferovaný režim</string>
+    <string name="per_app_touch_boost_title">Touch boost</string>
     <string name="per_app_angle_title">Použít ANGLE (experimentální)</string>
     <string name="per_app_unregister">Odebrat %1$s z knihovny</string>
     <!-- Disable ADB debugging -->

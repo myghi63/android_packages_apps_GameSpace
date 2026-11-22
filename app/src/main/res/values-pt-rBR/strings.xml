@@ -34,6 +34,7 @@
     <!-- Per app settings -->
     <string name="per_app_title">Configurar jogo</string>
     <string name="per_app_mode_title">Modo preferencial</string>
+    <string name="per_app_touch_boost_title">Impulso de toque</string>
     <string name="per_app_angle_title">Usar ANGLE (experimental)</string>
     <string name="per_app_unregister">Remover %1$s da biblioteca</string>
     <!-- Disable ADB debugging -->
