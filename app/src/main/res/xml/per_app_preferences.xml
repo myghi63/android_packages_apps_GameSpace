@@ -31,16 +31,16 @@
         android:title="@string/per_app_mode_title" />
 
     <ListPreference
-        android:key="per_app_angle_driver"
-        android:persistent="false"
-        android:summary="%s"
-        android:title="@string/per_app_angle_title" />
-
-    <ListPreference
         android:key="per_app_touch_boost"
         android:persistent="false"
         android:summary="%s"
         android:title="@string/per_app_touch_boost_title" />
+
+    <ListPreference
+        android:key="per_app_angle_driver"
+        android:persistent="false"
+        android:summary="%s"
+        android:title="@string/per_app_angle_title" />
 
     <Preference
         android:icon="@drawable/ic_remove"
