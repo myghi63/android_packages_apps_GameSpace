@@ -30,9 +30,17 @@
     <string name="suppress_fullscreen_intent_summary">在游戏中阻止全屏事件如来电时显示</string>
     <!-- Per app settings -->
     <string name="per_app_title">配置游戏</string>
-    <string name="per_app_mode_title">首选模式</string>
-    <string name="per_app_touch_boost_title">触摸增强</string>
+    <string name="per_app_mode_title">电源模式</string>
+    <string name="per_app_mode_standard">标准</string>
+    <string name="per_app_touch_boost_title">触摸屏采样率</string>
+    <string name="per_app_touch_boost_auto">自动</string>
+    <string name="per_app_touch_boost_off">标准 (120Hz)</string>
+    <string name="per_app_touch_boost_standard">高 (240Hz)</string>
+    <string name="per_app_touch_boost_maximum">最大 (360Hz)</string>
     <string name="per_app_quick_start_title">快速启动</string>
+    <string name="per_app_quick_start_auto">自动</string>
+    <string name="per_app_quick_start_enabled">启用</string>
+    <string name="per_app_quick_start_disabled">禁用</string>
     <string name="per_app_angle_title">使用 ANGLE 渲染器 (实验性)</string>
     <string name="per_app_unregister">从游戏列表中移除 %1$s</string>
     <!-- Disable ADB debugging -->

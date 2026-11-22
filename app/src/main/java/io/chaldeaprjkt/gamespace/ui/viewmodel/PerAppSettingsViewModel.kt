@@ -60,9 +60,9 @@ class PerAppSettingsViewModel @Inject constructor(
         private set
 
     val gameModeOptions = listOf(
-        1 to "Standard",
-        2 to "Performance",
-        3 to "Battery"
+        1 to context.getString(R.string.per_app_mode_standard),
+        2 to context.getString(R.string.game_mode_performance),
+        3 to context.getString(R.string.game_mode_battery)
     )
 
     fun loadGame(pkg: String) {
@@ -109,10 +109,10 @@ class PerAppSettingsViewModel @Inject constructor(
     }
 
     val touchBoostOptions = listOf(
-        AUTO_TOUCH_BOOST to "Auto",
-        "0" to "Off",
-        "1" to "Standard",
-        "2" to "Maximum"
+        AUTO_TOUCH_BOOST to context.getString(R.string.per_app_touch_boost_auto),
+        "0" to context.getString(R.string.per_app_touch_boost_off),
+        "1" to context.getString(R.string.per_app_touch_boost_standard),
+        "2" to context.getString(R.string.per_app_touch_boost_maximum)
     )
 
     fun updateTouchBoostLevel(choice: String) {
@@ -123,9 +123,9 @@ class PerAppSettingsViewModel @Inject constructor(
     }
 
     val quickStartOptions = listOf(
-        AUTO_QUICK_START to "Auto",
-        "1" to "Enabled",
-        "0" to "Disabled"
+        AUTO_QUICK_START to context.getString(R.string.per_app_quick_start_auto),
+        "1" to context.getString(R.string.per_app_quick_start_enabled),
+        "0" to context.getString(R.string.per_app_quick_start_disabled)
     )
 
     fun updateQuickStart(choice: String) {

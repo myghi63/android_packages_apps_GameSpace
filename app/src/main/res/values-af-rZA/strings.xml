@@ -30,9 +30,17 @@
     <string name="suppress_fullscreen_intent_summary">Verhoed dat volskermgebeurtenisse soos inkomende oproepe verskyn</string>
     <!-- Per app settings -->
     <string name="per_app_title">Stel speletjie in</string>
-    <string name="per_app_mode_title">Voorkeurmodus</string>
-    <string name="per_app_touch_boost_title">Touch boost</string>
+    <string name="per_app_mode_title">Energiemodus</string>
+    <string name="per_app_mode_standard">Standaard</string>
+    <string name="per_app_touch_boost_title">Samplesnelheid van het touchscreen</string>
+    <string name="per_app_touch_boost_auto">Automatisch</string>
+    <string name="per_app_touch_boost_off">Standaard (120Hz)</string>
+    <string name="per_app_touch_boost_standard">Hoog (240Hz)</string>
+    <string name="per_app_touch_boost_maximum">Maximaal (360Hz)</string>
     <string name="per_app_quick_start_title">Quick start</string>
+    <string name="per_app_quick_start_auto">Automatisch</string>
+    <string name="per_app_quick_start_enabled">Ingeschakeld</string>
+    <string name="per_app_quick_start_disabled">Uitgeschakeld</string>
     <string name="per_app_angle_title">Gebruik ANGLE (eksperimenteel)</string>
     <string name="per_app_unregister">Verwyder %1$s van biblioteek</string>
     <!-- Disable ADB debugging -->

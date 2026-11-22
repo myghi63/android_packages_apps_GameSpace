@@ -30,9 +30,17 @@
     <string name="suppress_fullscreen_intent_summary">Vollbild-Ereignisse wie eingehende Anrufe während des Spiels verhindern</string>
     <!-- Per app settings -->
     <string name="per_app_title">Spiel konfigurieren</string>
-    <string name="per_app_mode_title">Bevorzugter Modus</string>
-    <string name="per_app_touch_boost_title">Touch-Boost</string>
+    <string name="per_app_mode_title">Energie-Modus</string>
+    <string name="per_app_mode_standard">Standard</string>
+    <string name="per_app_touch_boost_title">Abtastrate des Touchscreens</string>
+    <string name="per_app_touch_boost_auto">Automatisch</string>
+    <string name="per_app_touch_boost_off">Standard (120Hz)</string>
+    <string name="per_app_touch_boost_standard">Hoch (240Hz)</string>
+    <string name="per_app_touch_boost_maximum">Maximal (360Hz)</string>
     <string name="per_app_quick_start_title">Schnellstart</string>
+    <string name="per_app_quick_start_auto">Automatisch</string>
+    <string name="per_app_quick_start_enabled">Aktiviert</string>
+    <string name="per_app_quick_start_disabled">Deaktiviert</string>
     <string name="per_app_angle_title">ANGLE benutzen (experimentell)</string>
     <string name="per_app_unregister">%1$s aus der Bibliothek entfernen</string>
     <!-- Disable ADB debugging -->

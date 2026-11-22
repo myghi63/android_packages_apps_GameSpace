@@ -30,9 +30,17 @@
     <string name="suppress_fullscreen_intent_summary">Αποτροπή εμφάνισης συμβάντων πλήρους οθόνης όπως οι εισερχόμενες κλήσεις κατά τη διάρκεια του παιχνιδιού</string>
     <!-- Per app settings -->
     <string name="per_app_title">Διαμόρφωση παιχνιδιού</string>
-    <string name="per_app_mode_title">Προτιμώμενη λειτουργία</string>
-    <string name="per_app_touch_boost_title">Touch boost</string>
+    <string name="per_app_mode_title">Λειτουργία ενέργειας</string>
+    <string name="per_app_mode_standard">Τυποποιημένη</string>
+    <string name="per_app_touch_boost_title">Ρυθμός δειγματοληψίας οθόνης αφής</string>
+    <string name="per_app_touch_boost_auto">Αυτόματο</string>
+    <string name="per_app_touch_boost_off">Τυποποιημένος (120Hz)</string>
+    <string name="per_app_touch_boost_standard">Υψηλός (240Hz)</string>
+    <string name="per_app_touch_boost_maximum">Μέγιστος (360Hz)</string>
     <string name="per_app_quick_start_title">Γρήγορη Εκκίνηση</string>
+    <string name="per_app_quick_start_auto">Αυτόματο</string>
+    <string name="per_app_quick_start_enabled">Ενεργοποιημένο</string>
+    <string name="per_app_quick_start_disabled">Απενεργοποιημένο</string>
     <string name="per_app_angle_title">Χρήση ANGLE (πειραματικό)</string>
     <string name="per_app_unregister">Αφαίρεση του %1$s από τη βιβλιοθήκη</string>
     <!-- Disable ADB debugging -->

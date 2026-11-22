@@ -30,9 +30,17 @@
     <string name="suppress_fullscreen_intent_summary">Împiedică apariția evenimentelor pe tot ecranul, cum ar fi apelurile primite în timpul jocului</string>
     <!-- Per app settings -->
     <string name="per_app_title">Configurare joc</string>
-    <string name="per_app_mode_title">Mod preferat</string>
-    <string name="per_app_touch_boost_title">Accelerare la atingere</string>
+    <string name="per_app_mode_title">Mod de alimentare</string>
+    <string name="per_app_mode_standard">Standard</string>
+    <string name="per_app_touch_boost_title">Frecvența de eșantionare a ecranului tactil</string>
+    <string name="per_app_touch_boost_auto">Automat</string>
+    <string name="per_app_touch_boost_off">Standard (120Hz)</string>
+    <string name="per_app_touch_boost_standard">Înaltă (240Hz)</string>
+    <string name="per_app_touch_boost_maximum">Maximă (360Hz)</string>
     <string name="per_app_quick_start_title">Pornire rapidă</string>
+    <string name="per_app_quick_start_auto">Automat</string>
+    <string name="per_app_quick_start_enabled">Activat</string>
+    <string name="per_app_quick_start_disabled">Dezactivat</string>
     <string name="per_app_angle_title">Utilizează ANGLE (experimental)</string>
     <string name="per_app_unregister">Elimină %1$s din bibliotecă</string>
     <!-- Disable ADB debugging -->

@@ -30,9 +30,17 @@
     <string name="suppress_fullscreen_intent_summary">Ngăn các sự kiện toàn màn hình như cuộc gọi đến xuất hiện khi ở trong trò chơi</string>
     <!-- Per app settings -->
     <string name="per_app_title">Định cấu hình trò chơi</string>
-    <string name="per_app_mode_title">Chế độ ưu tiên</string>
-    <string name="per_app_touch_boost_title">Tăng tốc cảm ứng</string>
+    <string name="per_app_mode_title">Chế độ năng lượng</string>
+    <string name="per_app_mode_standard">Tiêu chuẩn</string>
+    <string name="per_app_touch_boost_title">Tốc độ lấy mẫu màn hình cảm ứng</string>
+    <string name="per_app_touch_boost_auto">Tự động</string>
+    <string name="per_app_touch_boost_off">Tiêu chuẩn (120Hz)</string>
+    <string name="per_app_touch_boost_standard">Cao (240Hz)</string>
+    <string name="per_app_touch_boost_maximum">Tối đa (360Hz)</string>
     <string name="per_app_quick_start_title">Khởi động nhanh</string>
+    <string name="per_app_quick_start_auto">Tự động</string>
+    <string name="per_app_quick_start_enabled">Đã bật</string>
+    <string name="per_app_quick_start_disabled">Đã tắt</string>
     <string name="per_app_angle_title">Sử dụng ANGLE (thử nghiệm)</string>
     <string name="per_app_unregister">Xóa %1$s khỏi thư viện</string>
     <!-- Disable ADB debugging -->

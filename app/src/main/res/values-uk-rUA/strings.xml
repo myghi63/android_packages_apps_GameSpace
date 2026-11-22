@@ -30,9 +30,17 @@
     <string name="suppress_fullscreen_intent_summary">Запобігає появі повноекранних сповіщень, таких як вхідні дзвінки, під час гри</string>
     <!-- Per app settings -->
     <string name="per_app_title">Налаштувати гру</string>
-    <string name="per_app_mode_title">Переважний режим</string>
-    <string name="per_app_touch_boost_title">Підсилення дотику</string>
+    <string name="per_app_mode_title">Режим живлення</string>
+    <string name="per_app_mode_standard">Стандартний</string>
+    <string name="per_app_touch_boost_title">Частота опитування сенсорного екрана</string>
+    <string name="per_app_touch_boost_auto">Авто</string>
+    <string name="per_app_touch_boost_off">Стандартна (120Hz)</string>
+    <string name="per_app_touch_boost_standard">Висока (240Hz)</string>
+    <string name="per_app_touch_boost_maximum">Максимальна (360Hz)</string>
     <string name="per_app_quick_start_title">Швидкий старт</string>
+    <string name="per_app_quick_start_auto">Авто</string>
+    <string name="per_app_quick_start_enabled">Увімкнено</string>
+    <string name="per_app_quick_start_disabled">Вимкнено</string>
     <string name="per_app_angle_title">Використовувати ANGLE (експериментально)</string>
     <string name="per_app_unregister">Видалити %1$s з бібліотеки</string>
     <!-- Disable ADB debugging -->

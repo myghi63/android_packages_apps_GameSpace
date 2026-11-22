@@ -30,9 +30,17 @@
     <string name="suppress_fullscreen_intent_summary">Impedeix els esdeveniments a pantalla completa com trucades entrants</string>
     <!-- Per app settings -->
     <string name="per_app_title">Configura el joc</string>
-    <string name="per_app_mode_title">Mode preferit</string>
-    <string name="per_app_touch_boost_title">Touch boost</string>
+    <string name="per_app_mode_title">Mode d'energia</string>
+    <string name="per_app_mode_standard">Estàndard</string>
+    <string name="per_app_touch_boost_title">Freqüència de mostreig de la pantalla tàctil</string>
+    <string name="per_app_touch_boost_auto">Automàtic</string>
+    <string name="per_app_touch_boost_off">Estàndard (120Hz)</string>
+    <string name="per_app_touch_boost_standard">Alta (240Hz)</string>
+    <string name="per_app_touch_boost_maximum">Màxima (360Hz)</string>
     <string name="per_app_quick_start_title">Quick start</string>
+    <string name="per_app_quick_start_auto">Automàtic</string>
+    <string name="per_app_quick_start_enabled">Activat</string>
+    <string name="per_app_quick_start_disabled">Desactivat</string>
     <string name="per_app_angle_title">Utilitza l\'ANGLE (experimental)</string>
     <string name="per_app_unregister">Elimina %1$s de la biblioteca</string>
     <!-- Disable ADB debugging -->

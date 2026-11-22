@@ -30,9 +30,17 @@
     <string name="suppress_fullscreen_intent_summary">Evitar que eventos de pantalla completa como llamadas entrantes aparezcan en el juego</string>
     <!-- Per app settings -->
     <string name="per_app_title">Configurar juego</string>
-    <string name="per_app_mode_title">Modo preferido</string>
-    <string name="per_app_touch_boost_title">Aceleración táctil</string>
+    <string name="per_app_mode_title">Modo de energía</string>
+    <string name="per_app_mode_standard">Estándar</string>
+    <string name="per_app_touch_boost_title">Frecuencia de muestreo de la pantalla táctil</string>
+    <string name="per_app_touch_boost_auto">Automático</string>
+    <string name="per_app_touch_boost_off">Estándar (120Hz)</string>
+    <string name="per_app_touch_boost_standard">Alta (240Hz)</string>
+    <string name="per_app_touch_boost_maximum">Máxima (360Hz)</string>
     <string name="per_app_quick_start_title">Inicio rápido</string>
+    <string name="per_app_quick_start_auto">Automático</string>
+    <string name="per_app_quick_start_enabled">Activado</string>
+    <string name="per_app_quick_start_disabled">Desactivado</string>
     <string name="per_app_angle_title">Controlador de gráficos</string>
     <string name="per_app_unregister">Eliminar %1$s de la biblioteca</string>
     <!-- Disable ADB debugging -->

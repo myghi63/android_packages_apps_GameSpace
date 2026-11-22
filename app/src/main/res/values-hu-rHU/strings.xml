@@ -30,9 +30,17 @@
     <string name="suppress_fullscreen_intent_summary">Teljes képernyős események, mint például a bejövő hívás megjelenítésének megakadályozása</string>
     <!-- Per app settings -->
     <string name="per_app_title">Játék konfigurálása</string>
-    <string name="per_app_mode_title">Preferált mód</string>
-    <string name="per_app_touch_boost_title">Érintés gyorsítás</string>
+    <string name="per_app_mode_title">Energiamód</string>
+    <string name="per_app_mode_standard">Szabványos</string>
+    <string name="per_app_touch_boost_title">Érintőképernyő mintavételeési rátája</string>
+    <string name="per_app_touch_boost_auto">Automatikus</string>
+    <string name="per_app_touch_boost_off">Szabványos (120Hz)</string>
+    <string name="per_app_touch_boost_standard">Magas (240Hz)</string>
+    <string name="per_app_touch_boost_maximum">Maximális (360Hz)</string>
     <string name="per_app_quick_start_title">Gyorsindítás</string>
+    <string name="per_app_quick_start_auto">Automatikus</string>
+    <string name="per_app_quick_start_enabled">Engedélyezve</string>
+    <string name="per_app_quick_start_disabled">Letiltva</string>
     <string name="per_app_angle_title">ANGLE használata (kísérleti)</string>
     <string name="per_app_unregister">%1$s eltávolítása a könyvtáradból</string>
     <!-- Disable ADB debugging -->

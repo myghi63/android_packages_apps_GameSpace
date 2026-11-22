@@ -30,9 +30,17 @@
     <string name="suppress_fullscreen_intent_summary">Estää koko näytön tapahtumien, kuten saapuvien puhelujen näkymisen</string>
     <!-- Per app settings -->
     <string name="per_app_title">Määritä peli</string>
-    <string name="per_app_mode_title">Ensisijainen tila</string>
-    <string name="per_app_touch_boost_title">Touch boost</string>
+    <string name="per_app_mode_title">Virta-asetus</string>
+    <string name="per_app_mode_standard">Perus</string>
+    <string name="per_app_touch_boost_title">Kosketusnäytön näytteistystaajuus</string>
+    <string name="per_app_touch_boost_auto">Automaattinen</string>
+    <string name="per_app_touch_boost_off">Perus (120Hz)</string>
+    <string name="per_app_touch_boost_standard">Korkea (240Hz)</string>
+    <string name="per_app_touch_boost_maximum">Suurin (360Hz)</string>
     <string name="per_app_quick_start_title">Quick start</string>
+    <string name="per_app_quick_start_auto">Automaattinen</string>
+    <string name="per_app_quick_start_enabled">Käytössä</string>
+    <string name="per_app_quick_start_disabled">Ei käytössä</string>
     <string name="per_app_angle_title">Käytä ANGLE (kokeellinen)</string>
     <string name="per_app_unregister">Poista %1$s peliluettelosta</string>
     <!-- Disable ADB debugging -->

@@ -30,9 +30,17 @@
     <string name="suppress_fullscreen_intent_summary">Impedir que eventos em tela cheia apareçam durante o jogo</string>
     <!-- Per app settings -->
     <string name="per_app_title">Configurar jogo</string>
-    <string name="per_app_mode_title">Modo preferencial</string>
-    <string name="per_app_touch_boost_title">Impulso de toque</string>
+    <string name="per_app_mode_title">Modo de energia</string>
+    <string name="per_app_mode_standard">Padrão</string>
+    <string name="per_app_touch_boost_title">Velocidade de captura do touchscreen</string>
+    <string name="per_app_touch_boost_auto">Automático</string>
+    <string name="per_app_touch_boost_off">Padrão (120Hz)</string>
+    <string name="per_app_touch_boost_standard">Alta (240Hz)</string>
+    <string name="per_app_touch_boost_maximum">Máxima (360Hz)</string>
     <string name="per_app_quick_start_title">Início rápido</string>
+    <string name="per_app_quick_start_auto">Automático</string>
+    <string name="per_app_quick_start_enabled">Ativado</string>
+    <string name="per_app_quick_start_disabled">Desativado</string>
     <string name="per_app_angle_title">Usar ANGLE (experimental)</string>
     <string name="per_app_unregister">Remover %1$s da biblioteca</string>
     <!-- Disable ADB debugging -->

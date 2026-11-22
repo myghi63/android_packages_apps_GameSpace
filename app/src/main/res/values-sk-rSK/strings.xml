@@ -30,9 +30,17 @@
     <string name="suppress_fullscreen_intent_summary">Nezobrazovať udalosti na celej obrazovke, napr. prichádzajúci hovor</string>
     <!-- Per app settings -->
     <string name="per_app_title">Nastaviť hru</string>
-    <string name="per_app_mode_title">Preferovaný režim</string>
-    <string name="per_app_touch_boost_title">Touch boost</string>
+    <string name="per_app_mode_title">Režim napájania</string>
+    <string name="per_app_mode_standard">Štandard</string>
+    <string name="per_app_touch_boost_title">Vzorkovacia frekvencia dotykového displeja</string>
+    <string name="per_app_touch_boost_auto">Automaticky</string>
+    <string name="per_app_touch_boost_off">Štandardná (120Hz)</string>
+    <string name="per_app_touch_boost_standard">Vysoká (240Hz)</string>
+    <string name="per_app_touch_boost_maximum">Maximálna (360Hz)</string>
     <string name="per_app_quick_start_title">Rýchly štart</string>
+    <string name="per_app_quick_start_auto">Automaticky</string>
+    <string name="per_app_quick_start_enabled">Povolené</string>
+    <string name="per_app_quick_start_disabled">Zakázané</string>
     <string name="per_app_angle_title">Použiť ANGLE (experimentálne)</string>
     <string name="per_app_unregister">Odstrániť %1$s z knižnice</string>
     <!-- Disable ADB debugging -->

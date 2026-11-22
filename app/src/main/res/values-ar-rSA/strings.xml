@@ -30,9 +30,17 @@
     <string name="suppress_fullscreen_intent_summary">منع أحداث ملء الشاشة مثل المكالمات الواردة من الظهور أثناء اللعب</string>
     <!-- Per app settings -->
     <string name="per_app_title">ضبط اللعبة</string>
-    <string name="per_app_mode_title">الوضع المفضل</string>
-    <string name="per_app_touch_boost_title">تعزيز اللمس</string>
+    <string name="per_app_mode_title">وضع الطاقة</string>
+    <string name="per_app_mode_standard">قياسي</string>
+    <string name="per_app_touch_boost_title">معدل أخذ عينات شاشة اللمس</string>
+    <string name="per_app_touch_boost_auto">تلقائي</string>
+    <string name="per_app_touch_boost_off">قياسي (120Hz)</string>
+    <string name="per_app_touch_boost_standard">مرتفع (240Hz)</string>
+    <string name="per_app_touch_boost_maximum">أقصى (360Hz)</string>
     <string name="per_app_quick_start_title">البداية السريعة</string>
+    <string name="per_app_quick_start_auto">تلقائي</string>
+    <string name="per_app_quick_start_enabled">مُمكَّن</string>
+    <string name="per_app_quick_start_disabled">مُعطَّل</string>
     <string name="per_app_angle_title">استخدام واجهة المستخدم الجديدة (التجريبية)</string>
     <string name="per_app_unregister">إزالة %1$s من المكتبة</string>
     <!-- Disable ADB debugging -->

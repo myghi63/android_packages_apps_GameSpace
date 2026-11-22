@@ -30,9 +30,17 @@
     <string name="suppress_fullscreen_intent_summary">از نمایش رویدادهای تمام صفحه مانند تماس های دریافتی جلوگیری کنید</string>
     <!-- Per app settings -->
     <string name="per_app_title">پیکربندی بازی</string>
-    <string name="per_app_mode_title">حالت ترجیحی</string>
-    <string name="per_app_touch_boost_title">تقویت لمس</string>
+    <string name="per_app_mode_title">حالت توان</string>
+    <string name="per_app_mode_standard">استاندارد</string>
+    <string name="per_app_touch_boost_title">نرخ نمونه‌برداری صفحه لمسی</string>
+    <string name="per_app_touch_boost_auto">خودکار</string>
+    <string name="per_app_touch_boost_off">استاندارد (120Hz)</string>
+    <string name="per_app_touch_boost_standard">بالا (240Hz)</string>
+    <string name="per_app_touch_boost_maximum">حداکثر (360Hz)</string>
     <string name="per_app_quick_start_title">شروع سریع</string>
+    <string name="per_app_quick_start_auto">خودکار</string>
+    <string name="per_app_quick_start_enabled">فعال</string>
+    <string name="per_app_quick_start_disabled">غیرفعال</string>
     <string name="per_app_angle_title">درایور گرافیک</string>
     <string name="per_app_unregister">%1$s را از مجموعه حذف کنید</string>
     <!-- Disable ADB debugging -->
