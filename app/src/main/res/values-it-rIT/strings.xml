@@ -35,6 +35,7 @@
     <string name="per_app_title">Configura gioco</string>
     <string name="per_app_mode_title">Modalità preferita</string>
     <string name="per_app_touch_boost_title">Touch boost</string>
+    <string name="per_app_quick_start_title">Avvio rapido</string>
     <string name="per_app_angle_title">Usa nuova interfaccia (sperimentale)</string>
     <string name="per_app_unregister">Rimuovi %1$s dalla libreria</string>
     <!-- Disable ADB debugging -->

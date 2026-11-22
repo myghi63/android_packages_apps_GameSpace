@@ -35,6 +35,7 @@
     <string name="per_app_title">پیکربندی بازی</string>
     <string name="per_app_mode_title">حالت ترجیحی</string>
     <string name="per_app_touch_boost_title">تقویت لمس</string>
+    <string name="per_app_quick_start_title">شروع سریع</string>
     <string name="per_app_angle_title">درایور گرافیک</string>
     <string name="per_app_unregister">%1$s را از مجموعه حذف کنید</string>
     <!-- Disable ADB debugging -->

@@ -30,6 +30,7 @@ import javax.inject.Inject
 @HiltViewModel
 class PerAppSettingsViewModel @Inject constructor(
     @ApplicationContext private val context: Context,
+    private val appSettings: AppSettings,
     private val systemSettings: SystemSettings,
     private val gameModeUtils: GameModeUtils
 ) : ViewModel() {
@@ -53,6 +54,9 @@ class PerAppSettingsViewModel @Inject constructor(
         private set
 
     var touchBoostLevel by mutableStateOf(AUTO_TOUCH_BOOST)
+        private set
+
+    var quickStartChoice by mutableStateOf(AUTO_QUICK_START)
         private set
 
     val gameModeOptions = listOf(
@@ -79,6 +83,8 @@ class PerAppSettingsViewModel @Inject constructor(
         preferredMode = userGame?.mode ?: 1
 
         touchBoostLevel = systemSettings.touchBoostLevels[pkg]?.toString() ?: AUTO_TOUCH_BOOST
+        quickStartChoice = appSettings.quickStartLevels[pkg]
+            ?.let { if (it) "1" else "0" } ?: AUTO_QUICK_START
 
         val hasAngle = gameModeUtils.findAnglePackage()?.isEnabled == true
         val hasVulkan = gameModeUtils.isVulkanSupported()
@@ -116,6 +122,19 @@ class PerAppSettingsViewModel @Inject constructor(
         )
     }
 
+    val quickStartOptions = listOf(
+        AUTO_QUICK_START to "Auto",
+        "1" to "Enabled",
+        "0" to "Disabled"
+    )
+
+    fun updateQuickStart(choice: String) {
+        quickStartChoice = choice
+        appSettings.setQuickStart(
+            packageName, if (choice == AUTO_QUICK_START) null else choice == "1"
+        )
+    }
+
     fun unregisterGame() {
         gameModeUtils.setAngleDriverChoice(packageName, GameModeUtils.DRIVER_CHOICE_DEFAULT)
         val games = systemSettings.userGames.toMutableList()
@@ -125,5 +144,6 @@ class PerAppSettingsViewModel @Inject constructor(
 
     companion object {
         const val AUTO_TOUCH_BOOST = "auto"
+        const val AUTO_QUICK_START = "auto"
     }
 }

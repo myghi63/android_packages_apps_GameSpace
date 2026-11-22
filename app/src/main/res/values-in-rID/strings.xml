@@ -35,6 +35,7 @@
     <string name="per_app_title">Konfigurasi game</string>
     <string name="per_app_mode_title">Mode pilihan</string>
     <string name="per_app_touch_boost_title">Peningkat Sentuh</string>
+    <string name="per_app_quick_start_title">Mulai Cepat</string>
     <string name="per_app_angle_title">Gunakan ANGLE (eksperimental)</string>
     <string name="per_app_unregister">Hapus %1$s dari pustaka</string>
     <!-- Disable ADB debugging -->

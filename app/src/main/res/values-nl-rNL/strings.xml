@@ -35,6 +35,7 @@
     <string name="per_app_title">Spel configureren</string>
     <string name="per_app_mode_title">Voorkeursmodus</string>
     <string name="per_app_touch_boost_title">Touch boost</string>
+    <string name="per_app_quick_start_title">Quick start</string>
     <string name="per_app_angle_title">Gebruik ANGLE (experimenteel)</string>
     <string name="per_app_unregister">Verwijder %1$s uit bibliotheek</string>
     <!-- Disable ADB debugging -->

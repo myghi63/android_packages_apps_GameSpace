@@ -35,6 +35,7 @@
     <string name="per_app_title">Spiel konfigurieren</string>
     <string name="per_app_mode_title">Bevorzugter Modus</string>
     <string name="per_app_touch_boost_title">Touch-Boost</string>
+    <string name="per_app_quick_start_title">Schnellstart</string>
     <string name="per_app_angle_title">ANGLE benutzen (experimentell)</string>
     <string name="per_app_unregister">%1$s aus der Bibliothek entfernen</string>
     <!-- Disable ADB debugging -->

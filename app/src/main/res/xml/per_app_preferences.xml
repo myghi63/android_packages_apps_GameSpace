@@ -37,6 +37,12 @@
         android:title="@string/per_app_touch_boost_title" />
 
     <ListPreference
+        android:key="per_app_quick_start"
+        android:persistent="false"
+        android:summary="%s"
+        android:title="@string/per_app_quick_start_title" />
+
+    <ListPreference
         android:key="per_app_angle_driver"
         android:persistent="false"
         android:summary="%s"

@@ -35,6 +35,7 @@
     <string name="per_app_title">Настроить игру</string>
     <string name="per_app_mode_title">Предпочтительный режим</string>
     <string name="per_app_touch_boost_title">Ускорение отклика</string>
+    <string name="per_app_quick_start_title">Быстрый запуск</string>
     <string name="per_app_angle_title">Графический драйвер</string>
     <string name="per_app_unregister">Удалить %1$s из библиотеки</string>
     <!-- Disable ADB debugging -->

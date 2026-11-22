@@ -35,6 +35,7 @@
     <string name="per_app_title">Định cấu hình trò chơi</string>
     <string name="per_app_mode_title">Chế độ ưu tiên</string>
     <string name="per_app_touch_boost_title">Tăng tốc cảm ứng</string>
+    <string name="per_app_quick_start_title">Khởi động nhanh</string>
     <string name="per_app_angle_title">Sử dụng ANGLE (thử nghiệm)</string>
     <string name="per_app_unregister">Xóa %1$s khỏi thư viện</string>
     <!-- Disable ADB debugging -->

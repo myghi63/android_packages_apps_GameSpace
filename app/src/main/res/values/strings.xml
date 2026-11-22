@@ -40,6 +40,7 @@
     <string name="per_app_title">Configure Game</string>
     <string name="per_app_mode_title">Preferred Mode</string>
     <string name="per_app_touch_boost_title">Touch boost</string>
+    <string name="per_app_quick_start_title">Quick start</string>
     <string name="per_app_angle_title">Graphics driver</string>
     <string name="per_app_unregister">Remove %1$s from library</string>
 

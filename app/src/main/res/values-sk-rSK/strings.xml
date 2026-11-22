@@ -35,6 +35,7 @@
     <string name="per_app_title">Nastaviť hru</string>
     <string name="per_app_mode_title">Preferovaný režim</string>
     <string name="per_app_touch_boost_title">Touch boost</string>
+    <string name="per_app_quick_start_title">Rýchly štart</string>
     <string name="per_app_angle_title">Použiť ANGLE (experimentálne)</string>
     <string name="per_app_unregister">Odstrániť %1$s z knižnice</string>
     <!-- Disable ADB debugging -->

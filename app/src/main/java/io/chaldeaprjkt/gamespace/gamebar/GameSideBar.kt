@@ -20,6 +20,7 @@ package io.chaldeaprjkt.gamespace.gamebar
 
 import android.annotation.SuppressLint
 import android.app.ActivityTaskManager
+import android.app.GameManager
 import android.content.*
 import android.content.res.Configuration
 import android.graphics.PixelFormat
@@ -552,16 +553,19 @@ class GameSidebar(
     private fun getQuickStartApps(context: Context): List<AppInfo> {
         val appList = mutableListOf<AppInfo>()
         val packageManager = context.packageManager
-        if (appSettings.quickStartApps.isNullOrEmpty() == false) {
-            val packages = appSettings.quickStartApps.split(",")
-            for (pkg in packages) {
-                try {
-                    val appInfo = packageManager.getApplicationInfo(pkg, 0)
-                    val appName = packageManager.getApplicationLabel(appInfo).toString()
-                    val icon = packageManager.getApplicationIcon(appInfo)
-                    appList.add(AppInfo(name = appName, icon = icon, packageName = pkg))
-                } catch (_: Exception) {}
-            }
+        val quickStart = appSettings.quickStartLevels
+        val currentGame = gameModeUtils.activeGame?.packageName
+        for (game in settings.userGames) {
+            if (game.packageName == currentGame) continue
+            val enabled = quickStart[game.packageName]
+                ?: game.mode != GameManager.GAME_MODE_BATTERY
+            if (!enabled) continue
+            try {
+                val appInfo = packageManager.getApplicationInfo(game.packageName, 0)
+                val appName = packageManager.getApplicationLabel(appInfo).toString()
+                val icon = packageManager.getApplicationIcon(appInfo)
+                appList.add(AppInfo(name = appName, icon = icon, packageName = game.packageName))
+            } catch (_: Exception) {}
         }
         return appList
     }

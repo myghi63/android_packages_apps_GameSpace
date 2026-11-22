@@ -35,6 +35,7 @@
     <string name="per_app_title">Konfigurer spil</string>
     <string name="per_app_mode_title">Foretrukken tilstand</string>
     <string name="per_app_touch_boost_title">Touch boost</string>
+    <string name="per_app_quick_start_title">Quick start</string>
     <string name="per_app_angle_title">Brug ANGLE (eksperimentel)</string>
     <string name="per_app_unregister">Fjern %1$s fra bibliotek</string>
     <!-- Disable ADB debugging -->

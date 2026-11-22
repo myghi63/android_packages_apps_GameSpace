@@ -35,6 +35,7 @@
     <string name="per_app_title">Configurare joc</string>
     <string name="per_app_mode_title">Mod preferat</string>
     <string name="per_app_touch_boost_title">Accelerare la atingere</string>
+    <string name="per_app_quick_start_title">Pornire rapidă</string>
     <string name="per_app_angle_title">Utilizează ANGLE (experimental)</string>
     <string name="per_app_unregister">Elimină %1$s din bibliotecă</string>
     <!-- Disable ADB debugging -->

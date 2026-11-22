@@ -35,6 +35,7 @@
     <string name="per_app_title">ضبط اللعبة</string>
     <string name="per_app_mode_title">الوضع المفضل</string>
     <string name="per_app_touch_boost_title">تعزيز اللمس</string>
+    <string name="per_app_quick_start_title">البداية السريعة</string>
     <string name="per_app_angle_title">استخدام واجهة المستخدم الجديدة (التجريبية)</string>
     <string name="per_app_unregister">إزالة %1$s من المكتبة</string>
     <!-- Disable ADB debugging -->

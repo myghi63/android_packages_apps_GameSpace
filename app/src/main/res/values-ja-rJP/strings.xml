@@ -35,6 +35,7 @@
     <string name="per_app_title">ゲーム設定</string>
     <string name="per_app_mode_title">優先モード</string>
     <string name="per_app_touch_boost_title">タッチブースト</string>
+    <string name="per_app_quick_start_title">クイックスタート</string>
     <string name="per_app_angle_title">ANGLE を使用 (実験的)</string>
     <string name="per_app_unregister">%1$s をライブラリから削除</string>
     <!-- Disable ADB debugging -->

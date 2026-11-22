@@ -35,6 +35,7 @@
     <string name="per_app_title">Налаштувати гру</string>
     <string name="per_app_mode_title">Переважний режим</string>
     <string name="per_app_touch_boost_title">Підсилення дотику</string>
+    <string name="per_app_quick_start_title">Швидкий старт</string>
     <string name="per_app_angle_title">Використовувати ANGLE (експериментально)</string>
     <string name="per_app_unregister">Видалити %1$s з бібліотеки</string>
     <!-- Disable ADB debugging -->
