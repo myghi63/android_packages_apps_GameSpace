@@ -13,9 +13,6 @@
     <string name="app_search_title">Tìm kiếm</string>
     <string name="add_game">Thêm trò chơi</string>
     <string name="launch_game">Khởi chạy trò chơi</string>
-    <!-- Quick start apps -->
-    <string name="quick_start_apps_title">Mở nhanh ứng dụng</string>
-    <string name="quick_start_apps_summary">Chọn ứng dụng để mở nhanh</string>
     <!-- Auto brightness -->
     <string name="auto_brightness_disabled_title">Tắt độ sáng tự động</string>
     <string name="auto_brightness_disabled_summary">Giữ độ sáng ổn định khi ở trong trò chơi </string>

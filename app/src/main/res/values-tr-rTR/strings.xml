@@ -13,9 +13,6 @@
     <string name="app_search_title">Ara</string>
     <string name="add_game">Oyun ekle</string>
     <string name="launch_game">Oyunu başlat</string>
-    <!-- Quick start apps -->
-    <string name="quick_start_apps_title">Hızlı Başlangıç Uygulamaları</string>
-    <string name="quick_start_apps_summary">Hızlı başlatmak için uygulamaları seçin</string>
     <!-- Auto brightness -->
     <string name="auto_brightness_disabled_title">Otomatik parlaklığı devre dışı bırak</string>
     <string name="auto_brightness_disabled_summary">Oyun içindeyken parlaklığı sabit tutun</string>

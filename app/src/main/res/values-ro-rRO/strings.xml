@@ -13,9 +13,6 @@
     <string name="app_search_title">Căutare</string>
     <string name="add_game">Adaugă joc</string>
     <string name="launch_game">Lansează jocul</string>
-    <!-- Quick start apps -->
-    <string name="quick_start_apps_title">Pornire rapidă a aplicațiilor</string>
-    <string name="quick_start_apps_summary">Selectați aplicațiile pentru lansare rapidă</string>
     <!-- Auto brightness -->
     <string name="auto_brightness_disabled_title">Dezactivează luminozitatea automată</string>
     <string name="auto_brightness_disabled_summary">Păstrează luminozitatea setată în timpul jocului</string>

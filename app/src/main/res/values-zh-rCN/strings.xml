@@ -13,9 +13,6 @@
     <string name="app_search_title">搜索</string>
     <string name="add_game">添加游戏</string>
     <string name="launch_game">启动游戏</string>
-    <!-- Quick start apps -->
-    <string name="quick_start_apps_title">快速启动应用程序</string>
-    <string name="quick_start_apps_summary">选择要快速启动的应用</string>
     <!-- Auto brightness -->
     <string name="auto_brightness_disabled_title">禁用自动调节亮度</string>
     <string name="auto_brightness_disabled_summary">在游戏中保持亮度稳定</string>

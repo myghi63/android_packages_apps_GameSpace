@@ -13,9 +13,6 @@
     <string name="app_search_title">Cerca</string>
     <string name="add_game">Add game</string>
     <string name="launch_game">Launch game</string>
-    <!-- Quick start apps -->
-    <string name="quick_start_apps_title">App di avvio rapido</string>
-    <string name="quick_start_apps_summary">Seleziona le app da avviare rapidamente</string>
     <!-- Auto brightness -->
     <string name="auto_brightness_disabled_title">Disabilita luminosità automatica</string>
     <string name="auto_brightness_disabled_summary">Mantieni la luminosità regolata durante la partita</string>

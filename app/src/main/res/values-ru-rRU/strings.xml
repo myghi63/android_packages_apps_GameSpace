@@ -13,9 +13,6 @@
     <string name="app_search_title">Поиск</string>
     <string name="add_game">Добавить игру</string>
     <string name="launch_game">Запустить игру</string>
-    <!-- Quick start apps -->
-    <string name="quick_start_apps_title">Быстрый запуск приложений</string>
-    <string name="quick_start_apps_summary">Выберите приложения для быстрого запуска</string>
     <!-- Auto brightness -->
     <string name="auto_brightness_disabled_title">Отключить автояркость</string>
     <string name="auto_brightness_disabled_summary">Не менять яркость во время игры</string>

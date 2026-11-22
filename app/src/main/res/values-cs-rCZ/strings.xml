@@ -13,9 +13,6 @@
     <string name="app_search_title">Hledat</string>
     <string name="add_game">Add game</string>
     <string name="launch_game">Launch game</string>
-    <!-- Quick start apps -->
-    <string name="quick_start_apps_title">Rychlé spuštění aplikací</string>
-    <string name="quick_start_apps_summary">Vyberte aplikace pro rychlé spuštění</string>
     <!-- Auto brightness -->
     <string name="auto_brightness_disabled_title">Zakázat automatický jas</string>
     <string name="auto_brightness_disabled_summary">Zachovat nastavení jasu ve hře</string>

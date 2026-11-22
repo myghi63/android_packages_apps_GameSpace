@@ -13,9 +13,6 @@
     <string name="app_search_title">検索</string>
     <string name="add_game">ゲームを追加</string>
     <string name="launch_game">ゲームを起動</string>
-    <!-- Quick start apps -->
-    <string name="quick_start_apps_title">クイックスタートするアプリ</string>
-    <string name="quick_start_apps_summary">素早く起動するアプリを選択</string>
     <!-- Auto brightness -->
     <string name="auto_brightness_disabled_title">自動明るさ調節を無効化</string>
     <string name="auto_brightness_disabled_summary">ゲーム中は明るさを維持</string>

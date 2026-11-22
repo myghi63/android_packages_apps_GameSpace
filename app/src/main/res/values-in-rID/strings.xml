@@ -13,9 +13,6 @@
     <string name="app_search_title">Telusuri</string>
     <string name="add_game">Tambahkan game</string>
     <string name="launch_game">Luncurkan game</string>
-    <!-- Quick start apps -->
-    <string name="quick_start_apps_title">Aplikasi Mulai Cepat</string>
-    <string name="quick_start_apps_summary">Pilih aplikasi untuk diluncurkan dengan cepat</string>
     <!-- Auto brightness -->
     <string name="auto_brightness_disabled_title">Nonaktifkan kecerahan otomatis</string>
     <string name="auto_brightness_disabled_summary">Pertahankan kecerahan tetap saat dalam game</string>

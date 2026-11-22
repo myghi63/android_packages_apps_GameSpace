@@ -13,9 +13,6 @@
     <string name="app_search_title">Αναζήτηση</string>
     <string name="add_game">Add game</string>
     <string name="launch_game">Launch game</string>
-    <!-- Quick start apps -->
-    <string name="quick_start_apps_title">Εφαρμογές Γρήγορης Εκκίνησης</string>
-    <string name="quick_start_apps_summary">Επιλέξτε εφαρμογές για γρήγορη εκκίνηση</string>
     <!-- Auto brightness -->
     <string name="auto_brightness_disabled_title">Απενεργοποίηση αυτόματης φωτεινότητας</string>
     <string name="auto_brightness_disabled_summary">Διατηρήστε σταθερή τη φωτεινότητα ενώ βρίσκεστε στο παιχνίδι</string>

@@ -58,9 +58,6 @@ class SettingsViewModel @Inject constructor(
     var registeredGames by mutableStateOf<List<RegisteredGame>>(emptyList())
         private set
 
-    var quickStartApps by mutableStateOf(appSettings.quickStartApps)
-        private set
-
     var bypassChargeEnabled by mutableStateOf(systemSettings.bypassChargeEnabled)
         private set
 
@@ -110,11 +107,6 @@ class SettingsViewModel @Inject constructor(
     fun updateMenuOpacity(opacity: Float) {
         menuOpacity = opacity
         appSettings.menuOpacity = opacity.toInt()
-    }
-
-    fun updateQuickStartApps(apps: String) {
-        quickStartApps = apps
-        appSettings.quickStartApps = apps
     }
 
     fun updateBypassChargeEnabled(enabled: Boolean) {

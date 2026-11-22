@@ -13,9 +13,6 @@
     <string name="app_search_title">بحث</string>
     <string name="add_game">إضافة لُعبة</string>
     <string name="launch_game">تشغيل اللعبة</string>
-    <!-- Quick start apps -->
-    <string name="quick_start_apps_title">تطبيقات البداية السريعة</string>
-    <string name="quick_start_apps_summary">حدد التطبيقات للتشغيل السريع</string>
     <!-- Auto brightness -->
     <string name="auto_brightness_disabled_title">تعطيل السطوع التلقائي</string>
     <string name="auto_brightness_disabled_summary">حافظ على السطوع ثابتًا أثناء اللعب</string>

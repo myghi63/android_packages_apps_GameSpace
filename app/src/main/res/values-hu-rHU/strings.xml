@@ -13,9 +13,6 @@
     <string name="app_search_title">Keresés</string>
     <string name="add_game">Játék hozzáadása</string>
     <string name="launch_game">Játék indítása</string>
-    <!-- Quick start apps -->
-    <string name="quick_start_apps_title">Gyorsindítási alkalmazások</string>
-    <string name="quick_start_apps_summary">Válassza ki a gyorsan indítandó alkalmazásokat</string>
     <!-- Auto brightness -->
     <string name="auto_brightness_disabled_title">Az automatikus fényerőszabályzás tiltása</string>
     <string name="auto_brightness_disabled_summary">Tartsa a beállított fényerőt játék közben</string>

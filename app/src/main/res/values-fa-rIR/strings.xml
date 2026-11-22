@@ -13,9 +13,6 @@
     <string name="app_search_title">جستجو</string>
     <string name="add_game">اضافه کردن بازی</string>
     <string name="launch_game">اجرای بازی</string>
-    <!-- Quick start apps -->
-    <string name="quick_start_apps_title">برنامه‌های شروع سریع</string>
-    <string name="quick_start_apps_summary">برنامه‌ها را برای راه‌اندازی سریع انتخاب کنید</string>
     <!-- Auto brightness -->
     <string name="auto_brightness_disabled_title">غیرفعالسازی روشنایی خودکار</string>
     <string name="auto_brightness_disabled_summary">ثابت نگه داشتن روشنایی هنگام بازی کردن</string>
