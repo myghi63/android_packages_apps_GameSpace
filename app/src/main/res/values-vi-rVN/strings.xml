@@ -60,6 +60,8 @@
     <!-- Bypass charging -->
     <string name="bypass_charge_enabled_title">Bỏ qua sạc</string>
     <string name="bypass_charge_enabled_summary">Bật chế độ ngắt sạc khi đang chơi</string>
+    <string name="thermal_management_title">Quản lý nhiệt</string>
+    <string name="thermal_management_summary">Điều chỉnh hồ sơ nhiệt theo chế độ năng lượng. Tắt nếu bạn muốn tự quản lý thủ công bằng root.</string>
     <!-- Call overlay -->
     <string name="call_overlay_enabled_title">Lớp phủ cuộc gọi</string>
     <string name="call_overlay_enabled_summary">Hiển thị lớp phủ tối giản để trả lời/từ chối cuộc gọi</string>

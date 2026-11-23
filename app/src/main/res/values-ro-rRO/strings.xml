@@ -60,6 +60,8 @@
     <!-- Bypass charging -->
     <string name="bypass_charge_enabled_title">Ignoră încărcarea</string>
     <string name="bypass_charge_enabled_summary">Activare încărcare bypass în timpul jocului</string>
+    <string name="thermal_management_title">Gestiune termică</string>
+    <string name="thermal_management_summary">Ajustează profilul termic în funcție de modul de alimentare. Dezactivează dacă vrei să gestionezi acest lucru manual cu root.</string>
     <!-- Call overlay -->
     <string name="call_overlay_enabled_title">Apel suprapus</string>
     <string name="call_overlay_enabled_summary">Afișați suprapunerea minimă a apelurilor pentru a răspunde/respinge apelurile</string>

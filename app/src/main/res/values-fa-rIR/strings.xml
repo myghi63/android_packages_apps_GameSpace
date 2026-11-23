@@ -60,6 +60,8 @@
     <!-- Bypass charging -->
     <string name="bypass_charge_enabled_title">شارژ مستقیم</string>
     <string name="bypass_charge_enabled_summary">فعال‌سازی شارژ مستقیم هنگام بازی کردن</string>
+    <string name="thermal_management_title">مدیریت حرارتی</string>
+    <string name="thermal_management_summary">پروفایل حرارتی را متناسب با حالت انرژی تنظیم می‌کند. اگر می‌خواهید دستی با root مدیریت کنید، غیرفعالش کنید.</string>
     <!-- Call overlay -->
     <string name="call_overlay_enabled_title">پنجره شناور تماس</string>
     <string name="call_overlay_enabled_summary">نمایش حداقلی پوشش تماس برای پاسخ دادن/رد کردن تماس‌ها</string>

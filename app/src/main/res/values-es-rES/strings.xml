@@ -60,6 +60,8 @@
     <!-- Bypass charging -->
     <string name="bypass_charge_enabled_title">Omitir carga</string>
     <string name="bypass_charge_enabled_summary">Activar omisión de carga mientras juegas</string>
+    <string name="thermal_management_title">Gestión térmica</string>
+    <string name="thermal_management_summary">Ajusta el perfil térmico según el modo de energía. Desactívalo si quieres gestionarlo manualmente con root.</string>
     <!-- Call overlay -->
     <string name="call_overlay_enabled_title">Llamada en ventana flotante</string>
     <string name="call_overlay_enabled_summary">Usar ventana flotante compacta para responder o rechazar llamadas</string>

@@ -60,6 +60,8 @@
     <!-- Bypass charging -->
     <string name="bypass_charge_enabled_title">Bypass-töltés</string>
     <string name="bypass_charge_enabled_summary">Játék közben engedélyezi a Bypass-töltést</string>
+    <string name="thermal_management_title">Hőkezelés</string>
+    <string name="thermal_management_summary">Az energiaállapotnak megfelelően állítja a hőprofilt. Tiltsd le, ha root jogosultsággal kézzel szeretnéd kezelni.</string>
     <!-- Call overlay -->
     <string name="call_overlay_enabled_title">Hívás átfedés</string>
     <string name="call_overlay_enabled_summary">Minimális hívásfelületet jelenít meg a hívások fogadásához/elutasításához</string>

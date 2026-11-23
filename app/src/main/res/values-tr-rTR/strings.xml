@@ -60,6 +60,8 @@
     <!-- Bypass charging -->
     <string name="bypass_charge_enabled_title">Baypas şarj</string>
     <string name="bypass_charge_enabled_summary">Oyun oynarken baypas şarjı etkinleştir</string>
+    <string name="thermal_management_title">Termal yönetim</string>
+    <string name="thermal_management_summary">Güç moduna göre termal profili ayarlar. Root ile elle yönetmek istiyorsan devre dışı bırak.</string>
     <!-- Call overlay -->
     <string name="call_overlay_enabled_title">Arama katmanı</string>
     <string name="call_overlay_enabled_summary">Aramaları yanıtlamak/reddetmek için minimal arama katmanını göster</string>

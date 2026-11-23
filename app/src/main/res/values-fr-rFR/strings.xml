@@ -60,6 +60,8 @@
     <!-- Bypass charging -->
     <string name="bypass_charge_enabled_title">Contournement de charge</string>
     <string name="bypass_charge_enabled_summary">Activer le chargement du bypass pendant les parties</string>
+    <string name="thermal_management_title">Gestion thermique</string>
+    <string name="thermal_management_summary">Ajuste le profil thermique en fonction du mode d\'alimentation. Désactivez-le si vous souhaitez le gérer manuellement avec root.</string>
     <!-- Call overlay -->
     <string name="call_overlay_enabled_title">Superposition d\'appels</string>
     <string name="call_overlay_enabled_summary">Afficher la surcouche d\'appel minimale pour répondre/rejeter les appels</string>

@@ -60,6 +60,8 @@
     <!-- Bypass charging -->
     <string name="bypass_charge_enabled_title">Bypass charging</string>
     <string name="bypass_charge_enabled_summary">Enable bypass charging while playing games</string>
+    <string name="thermal_management_title">Gestió tèrmica</string>
+    <string name="thermal_management_summary">Ajusta el perfil tèrmic segons el mode d\'energia. Desactiveu-la si voleu gestionar-ho manualment amb root.</string>
     <!-- Call overlay -->
     <string name="call_overlay_enabled_title">Call overlay</string>
     <string name="call_overlay_enabled_summary">Show minimal call overlay to answer/reject calls</string>

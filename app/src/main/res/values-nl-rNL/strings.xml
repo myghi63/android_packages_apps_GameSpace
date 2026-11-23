@@ -60,6 +60,8 @@
     <!-- Bypass charging -->
     <string name="bypass_charge_enabled_title">Bypass charging</string>
     <string name="bypass_charge_enabled_summary">Enable bypass charging while playing games</string>
+    <string name="thermal_management_title">Thermisch beheer</string>
+    <string name="thermal_management_summary">Stelt het thermische profiel af op de vermogensmodus. Schakel uit als je dit handmatig met root wilt beheren.</string>
     <!-- Call overlay -->
     <string name="call_overlay_enabled_title">Call overlay</string>
     <string name="call_overlay_enabled_summary">Show minimal call overlay to answer/reject calls</string>

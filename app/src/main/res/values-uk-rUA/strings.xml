@@ -60,6 +60,8 @@
     <!-- Bypass charging -->
     <string name="bypass_charge_enabled_title">Пряме живлення телефону</string>
     <string name="bypass_charge_enabled_summary">Увімкнути обхід зарядки під час гри</string>
+    <string name="thermal_management_title">Термокерування</string>
+    <string name="thermal_management_summary">Коригує тепловий профіль відповідно до режиму живлення. Вімкніть, якщо хочете керувати цим вручну через root.</string>
     <!-- Call overlay -->
     <string name="call_overlay_enabled_title">Накладання викликів</string>
     <string name="call_overlay_enabled_summary">Показувати мінімальне накладення для відповіді/відхилення викликів</string>

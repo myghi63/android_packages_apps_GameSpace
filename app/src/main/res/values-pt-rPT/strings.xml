@@ -60,6 +60,8 @@
     <!-- Bypass charging -->
     <string name="bypass_charge_enabled_title">Alimentação Direta</string>
     <string name="bypass_charge_enabled_summary">Ativar alimentação direta durante o jogo</string>
+    <string name="thermal_management_title">Gestão térmica</string>
+    <string name="thermal_management_summary">Ajusta o perfil térmico de acordo com o modo de energia. Desative se quiser gerir isto manualmente com root.</string>
     <!-- Call overlay -->
     <string name="call_overlay_enabled_title">Sobreposição de chamada</string>
     <string name="call_overlay_enabled_summary">Mostrar uma sobreposição de chamada mínimo para responder/rejeitar chamadas</string>

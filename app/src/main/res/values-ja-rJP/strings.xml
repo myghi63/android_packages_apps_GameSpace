@@ -60,6 +60,8 @@
     <!-- Bypass charging -->
     <string name="bypass_charge_enabled_title">バイパス充電</string>
     <string name="bypass_charge_enabled_summary">ゲーム中にバイパス充電を有効にする</string>
+    <string name="thermal_management_title">サーマルマネジメント</string>
+    <string name="thermal_management_summary">電源モードに応じてサーマルプロファイルを調整します。root で手動管理する場合は無効にしてください。</string>
     <!-- Call overlay -->
     <string name="call_overlay_enabled_title">通話オーバーレイ</string>
     <string name="call_overlay_enabled_summary">通話の応答/拒否に小さい

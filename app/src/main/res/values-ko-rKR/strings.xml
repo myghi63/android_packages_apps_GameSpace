@@ -60,6 +60,8 @@
     <!-- Bypass charging -->
     <string name="bypass_charge_enabled_title">바이패스 충전</string>
     <string name="bypass_charge_enabled_summary">게임 플레이 중 바이패스 충전 활성화</string>
+    <string name="thermal_management_title">열 관리</string>
+    <string name="thermal_management_summary">전원 모드에 따라 열 프로필을 조정합니다. root 권한으로 직접 관리하려면 끄세요.</string>
     <!-- Call overlay -->
     <string name="call_overlay_enabled_title">통화 오버레이</string>
     <string name="call_overlay_enabled_summary">통화 수신/거절 시 최소한의 통화 오버레이만 표시합니다</string>

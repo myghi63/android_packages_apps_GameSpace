@@ -60,6 +60,8 @@
     <!-- Bypass charging -->
     <string name="bypass_charge_enabled_title">旁路充電</string>
     <string name="bypass_charge_enabled_summary">遊戲時啟用旁路充電</string>
+    <string name="thermal_management_title">溫度管理</string>
+    <string name="thermal_management_summary">根據電源模式調整散熱設定。如果你希望透過 root 手動管理，請關閉此功能。</string>
     <!-- Call overlay -->
     <string name="call_overlay_enabled_title">電話疊加層</string>
     <string name="call_overlay_enabled_summary">顯示最少的通話疊加層以接聽/拒接電話</string>

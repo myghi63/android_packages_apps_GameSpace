@@ -60,6 +60,8 @@
     <!-- Bypass charging -->
     <string name="bypass_charge_enabled_title">Pengisian Bypass</string>
     <string name="bypass_charge_enabled_summary">Aktifkan pengisian daya bypass saat bermain game</string>
+    <string name="thermal_management_title">Manajemen termal</string>
+    <string name="thermal_management_summary">Menyetel profil termal sesuai mode daya. Nonaktifkan jika Anda ingin mengelola ini secara manual dengan root.</string>
     <!-- Call overlay -->
     <string name="call_overlay_enabled_title">Overlay panggilan</string>
     <string name="call_overlay_enabled_summary">Tampilkan overlay panggilan minimal untuk menjawab/menolak panggilan</string>

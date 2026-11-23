@@ -60,6 +60,8 @@
     <!-- Bypass charging -->
     <string name="bypass_charge_enabled_title">Pomijaj ładowanie</string>
     <string name="bypass_charge_enabled_summary">Włącz pomijanie ładowania podczas grania w gry</string>
+    <string name="thermal_management_title">Zarządzanie termiczne</string>
+    <string name="thermal_management_summary">Dostosowuje profil termiczny do trybu zasilania. Wyłącz, jeśli chcesz zarządzać tym ręcznie z uprawnieniami root.</string>
     <!-- Call overlay -->
     <string name="call_overlay_enabled_title">Nakładka połączenia</string>
     <string name="call_overlay_enabled_summary">Pokazuj minimalną nakładkę podczas odbierania/odrzucania połączeń telefonicznych</string>

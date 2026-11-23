@@ -60,6 +60,8 @@
     <!-- Bypass charging -->
     <string name="bypass_charge_enabled_title">Bypass charging</string>
     <string name="bypass_charge_enabled_summary">Enable bypass charging while playing games</string>
+    <string name="thermal_management_title">Θερμικός έλεγχος</string>
+    <string name="thermal_management_summary">Προσαρμόζει το θερμικό προφίλ ανάλογα με τη λειτουργία ενέργειας. Απενεργοποιήστε το αν θέλετε να το διαχειρίζετε χειροκίνητα με root.</string>
     <!-- Call overlay -->
     <string name="call_overlay_enabled_title">Call overlay</string>
     <string name="call_overlay_enabled_summary">Show minimal call overlay to answer/reject calls</string>

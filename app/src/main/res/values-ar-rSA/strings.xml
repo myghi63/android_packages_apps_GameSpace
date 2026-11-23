@@ -60,6 +60,8 @@
     <!-- Bypass charging -->
     <string name="bypass_charge_enabled_title">تجاوز الشحن</string>
     <string name="bypass_charge_enabled_summary">تفعيل تجاوز الشحن أثناء لعب الألعاب</string>
+    <string name="thermal_management_title">الإدارة الحرارية</string>
+    <string name="thermal_management_summary">تضبط الملف الحراري وفق وضع الطاقة. عطّلها إذا أردت إدارتها يدويًا عبر صلاحيات root.</string>
     <!-- Call overlay -->
     <string name="call_overlay_enabled_title">عرض المكالمة</string>
     <string name="call_overlay_enabled_summary">إظهار الحد الأدنى من تراكب المكالمات للإجابة / رفض المكالمات</string>
