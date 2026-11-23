@@ -33,7 +33,7 @@
     <string name="per_app_mode_title">حالت توان</string>
     <string name="per_app_touch_boost_title">نرخ نمونه‌برداری صفحه لمسی</string>
     <string name="per_app_touch_boost_auto">خودکار</string>
-    <string name="per_app_touch_boost_off">استاندارد (120Hz)</string>
+    <string name="per_app_touch_boost_off">استاندارد (120–240Hz)</string>
     <string name="per_app_touch_boost_standard">بالا (240Hz)</string>
     <string name="per_app_touch_boost_maximum">حداکثر (360Hz)</string>
     <string name="per_app_quick_start_title">شروع سریع</string>

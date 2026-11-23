@@ -33,7 +33,7 @@
     <string name="per_app_mode_title">Mode daya</string>
     <string name="per_app_touch_boost_title">Laju pengambilan sampel layar sentuh</string>
     <string name="per_app_touch_boost_auto">Otomatis</string>
-    <string name="per_app_touch_boost_off">Standar (120Hz)</string>
+    <string name="per_app_touch_boost_off">Standar (120–240Hz)</string>
     <string name="per_app_touch_boost_standard">Tinggi (240Hz)</string>
     <string name="per_app_touch_boost_maximum">Maksimal (360Hz)</string>
     <string name="per_app_quick_start_title">Mulai Cepat</string>

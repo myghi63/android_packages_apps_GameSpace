@@ -33,7 +33,7 @@
     <string name="per_app_mode_title">Virta-asetus</string>
     <string name="per_app_touch_boost_title">Kosketusnäytön näytteistystaajuus</string>
     <string name="per_app_touch_boost_auto">Automaattinen</string>
-    <string name="per_app_touch_boost_off">Perus (120Hz)</string>
+    <string name="per_app_touch_boost_off">Perus (120–240Hz)</string>
     <string name="per_app_touch_boost_standard">Korkea (240Hz)</string>
     <string name="per_app_touch_boost_maximum">Suurin (360Hz)</string>
     <string name="per_app_quick_start_title">Quick start</string>

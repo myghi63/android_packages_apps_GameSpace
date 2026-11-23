@@ -33,7 +33,7 @@
     <string name="per_app_mode_title">电源模式</string>
     <string name="per_app_touch_boost_title">触摸屏采样率</string>
     <string name="per_app_touch_boost_auto">自动</string>
-    <string name="per_app_touch_boost_off">标准 (120Hz)</string>
+    <string name="per_app_touch_boost_off">标准 (120–240Hz)</string>
     <string name="per_app_touch_boost_standard">高 (240Hz)</string>
     <string name="per_app_touch_boost_maximum">最大 (360Hz)</string>
     <string name="per_app_quick_start_title">快速启动</string>

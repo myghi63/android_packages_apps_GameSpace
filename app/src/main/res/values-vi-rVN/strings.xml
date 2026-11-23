@@ -33,7 +33,7 @@
     <string name="per_app_mode_title">Chế độ năng lượng</string>
     <string name="per_app_touch_boost_title">Tốc độ lấy mẫu màn hình cảm ứng</string>
     <string name="per_app_touch_boost_auto">Tự động</string>
-    <string name="per_app_touch_boost_off">Tiêu chuẩn (120Hz)</string>
+    <string name="per_app_touch_boost_off">Tiêu chuẩn (120–240Hz)</string>
     <string name="per_app_touch_boost_standard">Cao (240Hz)</string>
     <string name="per_app_touch_boost_maximum">Tối đa (360Hz)</string>
     <string name="per_app_quick_start_title">Khởi động nhanh</string>

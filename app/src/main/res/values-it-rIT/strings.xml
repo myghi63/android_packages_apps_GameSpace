@@ -33,7 +33,7 @@
     <string name="per_app_mode_title">Modalità di alimentazione</string>
     <string name="per_app_touch_boost_title">Frequenza di campionamento del touchscreen</string>
     <string name="per_app_touch_boost_auto">Automatico</string>
-    <string name="per_app_touch_boost_off">Standard (120Hz)</string>
+    <string name="per_app_touch_boost_off">Standard (120–240Hz)</string>
     <string name="per_app_touch_boost_standard">Alta (240Hz)</string>
     <string name="per_app_touch_boost_maximum">Massima (360Hz)</string>
     <string name="per_app_quick_start_title">Avvio rapido</string>

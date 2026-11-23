@@ -33,7 +33,7 @@
     <string name="per_app_mode_title">Режим питания</string>
     <string name="per_app_touch_boost_title">Частота опроса сенсорного экрана</string>
     <string name="per_app_touch_boost_auto">Авто</string>
-    <string name="per_app_touch_boost_off">Стандартная (120Hz)</string>
+    <string name="per_app_touch_boost_off">Стандартная (120–240Hz)</string>
     <string name="per_app_touch_boost_standard">Высокая (240Hz)</string>
     <string name="per_app_touch_boost_maximum">Максимальная (360Hz)</string>
     <string name="per_app_quick_start_title">Быстрый запуск</string>

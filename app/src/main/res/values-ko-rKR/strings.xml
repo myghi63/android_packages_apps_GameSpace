@@ -33,7 +33,7 @@
     <string name="per_app_mode_title">전원 모드</string>
     <string name="per_app_touch_boost_title">터치스크린 샘플링 속도</string>
     <string name="per_app_touch_boost_auto">자동</string>
-    <string name="per_app_touch_boost_off">표준 (120Hz)</string>
+    <string name="per_app_touch_boost_off">표준 (120–240Hz)</string>
     <string name="per_app_touch_boost_standard">높음 (240Hz)</string>
     <string name="per_app_touch_boost_maximum">최대 (360Hz)</string>
     <string name="per_app_quick_start_title">빠른 시작</string>

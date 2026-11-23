@@ -33,7 +33,7 @@
     <string name="per_app_mode_title">Güç modu</string>
     <string name="per_app_touch_boost_title">Dokunmatik ekran örnekleme hızı</string>
     <string name="per_app_touch_boost_auto">Otomatik</string>
-    <string name="per_app_touch_boost_off">Standart (120Hz)</string>
+    <string name="per_app_touch_boost_off">Standart (120–240Hz)</string>
     <string name="per_app_touch_boost_standard">Yüksek (240Hz)</string>
     <string name="per_app_touch_boost_maximum">Maksimum (360Hz)</string>
     <string name="per_app_quick_start_title">Hızlı Başlangıç</string>

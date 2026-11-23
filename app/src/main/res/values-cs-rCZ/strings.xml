@@ -33,7 +33,7 @@
     <string name="per_app_mode_title">Režim napájení</string>
     <string name="per_app_touch_boost_title">Vzorkovací frekvence dotykového displeje</string>
     <string name="per_app_touch_boost_auto">Automaticky</string>
-    <string name="per_app_touch_boost_off">Standardní (120Hz)</string>
+    <string name="per_app_touch_boost_off">Standardní (120–240Hz)</string>
     <string name="per_app_touch_boost_standard">Vysoká (240Hz)</string>
     <string name="per_app_touch_boost_maximum">Maximální (360Hz)</string>
     <string name="per_app_quick_start_title">Rychlé spuštění</string>

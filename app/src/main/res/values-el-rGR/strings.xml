@@ -33,7 +33,7 @@
     <string name="per_app_mode_title">Λειτουργία ενέργειας</string>
     <string name="per_app_touch_boost_title">Ρυθμός δειγματοληψίας οθόνης αφής</string>
     <string name="per_app_touch_boost_auto">Αυτόματο</string>
-    <string name="per_app_touch_boost_off">Τυποποιημένος (120Hz)</string>
+    <string name="per_app_touch_boost_off">Τυποποιημένος (120–240Hz)</string>
     <string name="per_app_touch_boost_standard">Υψηλός (240Hz)</string>
     <string name="per_app_touch_boost_maximum">Μέγιστος (360Hz)</string>
     <string name="per_app_quick_start_title">Γρήγορη Εκκίνηση</string>

@@ -33,7 +33,7 @@
     <string name="per_app_mode_title">電源モード</string>
     <string name="per_app_touch_boost_title">タッチスクリーンのサンプリングレート</string>
     <string name="per_app_touch_boost_auto">自動</string>
-    <string name="per_app_touch_boost_off">標準 (120Hz)</string>
+    <string name="per_app_touch_boost_off">標準 (120–240Hz)</string>
     <string name="per_app_touch_boost_standard">高 (240Hz)</string>
     <string name="per_app_touch_boost_maximum">最大 (360Hz)</string>
     <string name="per_app_quick_start_title">クイックスタート</string>

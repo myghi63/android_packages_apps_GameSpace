@@ -33,7 +33,7 @@
     <string name="per_app_mode_title">Strømtilstand</string>
     <string name="per_app_touch_boost_title">Samplehastighed for touchskærm</string>
     <string name="per_app_touch_boost_auto">Automatisk</string>
-    <string name="per_app_touch_boost_off">Standard (120Hz)</string>
+    <string name="per_app_touch_boost_off">Standard (120–240Hz)</string>
     <string name="per_app_touch_boost_standard">Høj (240Hz)</string>
     <string name="per_app_touch_boost_maximum">Maksimal (360Hz)</string>
     <string name="per_app_quick_start_title">Quick start</string>

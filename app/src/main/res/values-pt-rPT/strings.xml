@@ -33,7 +33,7 @@
     <string name="per_app_mode_title">Modo de energia</string>
     <string name="per_app_touch_boost_title">Velocidade de captura do ecrã tátil</string>
     <string name="per_app_touch_boost_auto">Automático</string>
-    <string name="per_app_touch_boost_off">Padrão (120Hz)</string>
+    <string name="per_app_touch_boost_off">Padrão (120–240Hz)</string>
     <string name="per_app_touch_boost_standard">Alta (240Hz)</string>
     <string name="per_app_touch_boost_maximum">Máxima (360Hz)</string>
     <string name="per_app_quick_start_title">Inicialização rápida</string>

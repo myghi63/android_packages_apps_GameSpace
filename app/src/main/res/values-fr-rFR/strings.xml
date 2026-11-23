@@ -33,7 +33,7 @@
     <string name="per_app_mode_title">Mode énergétique</string>
     <string name="per_app_touch_boost_title">Fréquence d\'échantillonnage de l\'écran tactile</string>
     <string name="per_app_touch_boost_auto">Automatique</string>
-    <string name="per_app_touch_boost_off">Standard (120Hz)</string>
+    <string name="per_app_touch_boost_off">Standard (120–240Hz)</string>
     <string name="per_app_touch_boost_standard">Élevée (240Hz)</string>
     <string name="per_app_touch_boost_maximum">Maximale (360Hz)</string>
     <string name="per_app_quick_start_title">Démarrage rapide</string>
