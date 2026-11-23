@@ -35,6 +35,7 @@ class ThermalService : android.app.Service() {
     private var currentPackage = ""
     private var retryCount = 0
     private var lastNotice = ""
+    private var thermalManaged = true
     @Volatile private var destroyed = false
 
     private val applyRunnable = Runnable { applyScene() }
@@ -71,7 +72,7 @@ class ThermalService : android.app.Service() {
             when (intent?.action) {
                 Intent.ACTION_SCREEN_OFF -> {
                     currentPackage = ""
-                    utils.writeDefault()
+                    if (utils.isThermalManagementEnabled()) utils.writeDefault()
                     bypass.release()
                     // With the screen off the level can rise in peace; SCREEN_ON re-evaluates.
                     watchBatteryLevel(false)
@@ -133,6 +134,7 @@ class ThermalService : android.app.Service() {
             ThermalUtils.SETTINGS_GAME_LIST_DENIED,
             ThermalUtils.SETTINGS_THERMAL_GAMING,
             ThermalUtils.SETTINGS_THERMAL_ALWAYS,
+            ThermalUtils.SETTINGS_THERMAL_MANAGEMENT,
         )) {
             contentResolver.registerContentObserver(
                 Settings.System.getUriFor(key), false, gameListObserver,
@@ -167,7 +169,7 @@ class ThermalService : android.app.Service() {
         } catch (e: Exception) {
             Log.w(TAG, "Cannot unregister task listener", e)
         }
-        utils.writeDefault()
+        if (thermalManaged) utils.writeDefault()
         bypass.release()
         super.onDestroy()
     }
@@ -193,10 +195,18 @@ class ThermalService : android.app.Service() {
 
     private fun applyScene() {
         if (destroyed) return
+        val managed = utils.isThermalManagementEnabled()
+        if (managed != thermalManaged) {
+            // Turning the switch off hands sconfig over to manual management:
+            // restore the boot scene once so it starts from a known state.
+            if (!managed) utils.writeDefault()
+            thermalManaged = managed
+            currentPackage = ""
+        }
         if (!interactive()) {
             currentPackage = ""
             retryCount = 0
-            utils.writeDefault()
+            if (thermalManaged) utils.writeDefault()
             return
         }
         val packageName = try {
@@ -223,6 +233,11 @@ class ThermalService : android.app.Service() {
         // A new foreground app may warn again about the same condition.
         lastNotice = ""
         Log.d(TAG, "foreground=$packageName game=${utils.isGame(packageName)}")
+        if (!thermalManaged) {
+            // Scene writes are off; the bypass axis keeps working.
+            applyBypass(utils.isGame(packageName))
+            return
+        }
         if (utils.writeSceneFor(packageName)) {
             retryCount = 0
         } else if (retryCount < 3) {

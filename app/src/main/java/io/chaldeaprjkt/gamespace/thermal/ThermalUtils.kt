@@ -46,6 +46,12 @@ class ThermalUtils private constructor(private val context: Context) {
          */
         const val SETTINGS_THERMAL_ALWAYS = "onyx_thermal_always"
 
+        /** Switch that lets the service touch the thermal scene at all. Default on.
+         * Turning it off restores the boot scene once and leaves sconfig alone:
+         * the scene is then managed by hand.
+         */
+        const val SETTINGS_THERMAL_MANAGEMENT = "gamespace_thermal_management"
+
         // GameManager game modes stored in the list entry
         // (GameManager.GAME_MODE_STANDARD / _PERFORMANCE / _BATTERY_SAVER).
         private const val DEFAULT_MODE = 1
@@ -164,6 +170,10 @@ class ThermalUtils private constructor(private val context: Context) {
     /** Whether the gaming scene follows the game list. Default on. */
     fun isGamingProfileEnabled(): Boolean =
         Settings.System.getInt(context.contentResolver, SETTINGS_THERMAL_GAMING, 1) == 1
+
+    /** Whether the automatic thermal management writes sconfig at all. Default on. */
+    fun isThermalManagementEnabled(): Boolean =
+        Settings.System.getInt(context.contentResolver, SETTINGS_THERMAL_MANAGEMENT, 1) == 1
 
     /** Whether the gaming scene is forced whatever the foreground app is. */
     fun isThermalAlwaysEnabled(): Boolean =

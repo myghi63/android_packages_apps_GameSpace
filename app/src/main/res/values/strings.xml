@@ -70,6 +70,8 @@
     <!-- Bypass charging -->
     <string name="bypass_charge_enabled_title">Bypass charging</string>
     <string name="bypass_charge_enabled_summary">Enable bypass charging while playing games</string>
+    <string name="thermal_management_title">Thermal management</string>
+    <string name="thermal_management_summary">Adjust the thermal profile according to the power mode. Turn this off if you want to manage it manually with root.</string>
 
     <!-- Call overlay -->
     <string name="call_overlay_enabled_title">Call overlay</string>

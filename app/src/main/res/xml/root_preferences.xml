@@ -104,6 +104,12 @@
             android:summary="@string/bypass_charge_enabled_summary"
             android:defaultValue="false" />
 
+        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+            android:key="gamespace_thermal_management"
+            android:title="@string/thermal_management_title"
+            android:summary="@string/thermal_management_summary"
+            android:defaultValue="true" />
+
         <com.crdroid.settings.preferences.CustomSeekBarPreference
             android:key="gamespace_icon_idle_alpha"
             android:title="@string/icon_idle_opacity_title"
